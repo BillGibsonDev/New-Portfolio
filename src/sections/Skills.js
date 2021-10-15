@@ -74,6 +74,9 @@ margin-bottom: 25%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 1em;
         grid-row-gap: 1em;
+            @media (max-width: 1001px){
+                grid-template-columns: 1fr 1fr 1fr;
+            }
             @media (max-width: 750px){
                 grid-template-columns: 1fr 1fr;
             }

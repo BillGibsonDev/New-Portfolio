@@ -24,15 +24,15 @@ export default function Contact() {
                     </article>
                     <article>
                         <img src={Git} alt="" />
-                        <a href="https://github.com/DevGibby">DevGibby</a>
+                        <a href="https://github.com/DevGibby" target="_blank" rel="noreferrer">DevGibby</a>
                     </article>
                     <article>
                         <img src={Twitter} alt="" />
-                        <a href="https://twitter.com/DevGibby">@DevGibby</a>
+                        <a href="https://twitter.com/DevGibby" target="_blank" rel="noreferrer">@DevGibby</a>
                     </article>
                     <article>
                         <img src={Linkedin} alt="" />
-                        <a href="https://www.linkedin.com/in/bill-gibson-868182104/">Bill Gibson</a>
+                        <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer">Bill Gibson</a>
                     </article>
                 </div>
             </div>

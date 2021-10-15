@@ -44,7 +44,7 @@ const StyledProject = styled.div`
 height: 100%;
 margin-bottom: 10%;
     h2 {
-        font-size: 3em;
+        font-size: 2.2em;
         color: #0f4d92;
         width: 50%;
         border-bottom: 2px solid #0f4d92;
@@ -53,7 +53,7 @@ margin-bottom: 10%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
+        grid-row-gap: 2em;
             @media (max-width: 750px){
                 grid-template-columns: 1fr;
             }

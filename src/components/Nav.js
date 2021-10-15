@@ -16,12 +16,10 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Nav() {
 
-/* Open when someone clicks on the span element */
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
@@ -57,6 +55,9 @@ const StyledNav = styled.div`
     left: 5%;
     top: 35%;
     z-index: 99;
+        @media (max-width: 1250px){
+            left: 0;
+        }
         @media (max-width: 750px){
             top: 0;
             left: 0;
@@ -144,8 +145,8 @@ const StyledNav = styled.div`
                 display: none;
                 width: 30px;
                 position: absolute;
-                top: 10%;
-                right: 2%;
+                top: 15%;
+                right: 3%;
                 &:hover, &:focus {
                     transition: 0.3s;
                     transform: rotateZ(30deg);

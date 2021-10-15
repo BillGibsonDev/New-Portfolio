@@ -24,7 +24,7 @@ export default function Project({
 
 const StyledProject = styled.div`
 min-height: 40vh;
-margin: 1em 0;
+margin: 2em 0;
 width: 100%;
 border-radius: 14px;
 position: relative;
@@ -50,7 +50,6 @@ position: relative;
             border-radius: 10px;
             width: 100%;
             height: 100%;
-            object-fit: cover;
         }
     }
     

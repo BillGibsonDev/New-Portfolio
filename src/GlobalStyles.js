@@ -14,8 +14,15 @@ html {
     width: 60%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    @media (max-width: 1450px){
+    @media (max-width: 1375px){
+       font-size: 90%;
+    }
+    @media (max-width: 1350px){
+        width: 70%;
+    }
+    @media (max-width: 1250px){
         font-size: 70%;
+        width: 80%;
     }  
     @media (max-width: 750px){
        width: 90%;

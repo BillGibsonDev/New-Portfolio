@@ -17,6 +17,7 @@ export const ProjectList = [
         paragraph: "Borpa Pharma Company is a basic custom design for a mock technology company. The design focuses on readability and accessiblity. This website uses a Google Maps API to display the map of the general area of the company.",
         websiteLink: "https://optimistic-wozniak-7f917f.netlify.app/",
         githubLink:"https://github.com/DevGibby/Borpa-Pharma-Site",
+        build:"Built with: HTML, SCSS and JavaScript",
     },
     {
         id: "2",
@@ -26,6 +27,7 @@ export const ProjectList = [
         paragraph: "Hotely is a React Website built using React Styled Components.  Hotely has a responsive design to keep the experience fluid throughout multiple devices.",
         websiteLink: "https://mystifying-swirles-a6f61f.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Hotel-Landing",
+        build:"Npm Packages: Built with: JavaScript, React and Styled Components",
     },
     {
         id: "3",
@@ -35,6 +37,8 @@ export const ProjectList = [
         paragraph: "Volskya Pharmacuticals is a custom website built with React. This site was built using Styled Components and FramerMotion animation library. This website UI / UX design was built for readability and accessbility.",
         websiteLink: "https://mystifying-swirles-a6f61f.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Pharma-Site",
+        build:"Built with: JavaScript and React",
+        npm: "Npm Packages:Styled Components, Framer Motion and React Router Dom",
     },
     {
         id: "4",
@@ -44,6 +48,8 @@ export const ProjectList = [
         paragraph: "Sal Vespucci's photo site is a mock website for Vespucci Photography studio built in React. The idea of the website is to have some cool animations while displaying a gallery of the Photography studio's work.",
         websiteLink: "https://hopeful-franklin-f3b18d.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Photo-Site",
+        build:"Built with: JavaScript and React",
+        npm: "Npm Packages: Styled Components, Framer Motion and React Router Dom",
     },
     {
         id: "5",
@@ -53,6 +59,8 @@ export const ProjectList = [
         paragraph: "Rizzo's Italian Bistro Website is a React ECommerce Website built to take the customer from Landing Page all the way to Checkout. This website includes a Google Maps API to show the location of the resturant, page transition animations, Styled Components and a working form from Formspree.",
         websiteLink: "https://heuristic-shockley-673121.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Rizzo-Menu",
+        build:"Built with: JavaScript and React",
+        npm: "Npm Packages: Styled Components and React Router Dom",
     },
     {
         id: "6",
@@ -62,6 +70,8 @@ export const ProjectList = [
         paragraph: "Free The Games is a website built with React. This website was made with Free to Game API. I included a few animations with the Framer Motion Library. Other libraries used were Axios, React-Router and Styled-Components.",
         websiteLink: "https://unruffled-torvalds-0f1306.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Free-Games-Api",
+        build:"Built with: JavaScript and React",
+        npm: "Npm Packages: Styled Components, React Router Dom and Framer Motion",
     },
     {
         id: "7",
@@ -71,5 +81,7 @@ export const ProjectList = [
         paragraph: "The Real Deal Fitness project started out as an example website I was using to learn the Shopify platform. This peaked my interest. I have always been involved in sports and fitness. This is where I began to build the Real Deal Fitness brand. I developed a standalone blog website using React, MongoDb, Express and Node.js. This is a live website to help build my brand using fitness articles, news and more.",
         websiteLink: "https://www.trdfit.com/",
         githubLink:"https://github.com/DevGibby/New-Fit-Blog",
+        build:"Built with: JavaScript, React, Redux, MongoDB, Express and Node",
+        npm: "Npm Packages: Styled Components and React Router Dom",
     }, 
 ]

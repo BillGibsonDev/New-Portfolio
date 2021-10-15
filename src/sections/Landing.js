@@ -16,9 +16,9 @@ export default function Landing() {
                 <h1>Bill Gibson</h1>
                 <h3 className="typewriter">I am a Frontend Web Developer.</h3>
                 <div className="icon-container">
-                    <a href="https://github.com/DevGibby"><img src={Git} alt="" /></a>
-                    <a href="https://twitter.com/DevGibby"><img src={Twitter} alt="" /></a>
-                    <a href="https://www.linkedin.com/in/bill-gibson-868182104/"><img src={Linkedin} alt="" /></a>
+                    <a href="https://github.com/DevGibby" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
+                    <a href="https://twitter.com/DevGibby" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="" /></a>
                 </div>
             </div>
         </StyledLanding>
@@ -46,9 +46,15 @@ const StyledLanding = styled.div`
         h1 {
             font-size: 6em;
             color: #0f4d92;
+            @media (max-width: 750px){
+               font-size: 4em;
+            }
         }
         h3 {
             font-size: 2em;
+            @media (max-width: 750px){
+               font-size: 1.5em;
+            }
         }
         .icon-container{
             margin-top: 20px;  

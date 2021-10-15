@@ -30,8 +30,12 @@ console.log(id)
                             <div className="overlay-wrapper">
                                 <h4>{project.title}</h4>
                                 <img src={project.thumbnail} alt="" />
-                                <a href={project.websiteLink} target="_blank" rel="noreferrer">Project Website</a>
-                                <a href={project.githubLink} target="_blank" rel="noreferrer">Github</a>
+                                <div className="link-wrapper">
+                                    <a href={project.websiteLink} target="_blank" rel="noreferrer">Project Website</a>
+                                    <a href={project.githubLink} target="_blank" rel="noreferrer">Github</a>
+                                </div>
+                                <h5>{project.build}</h5>
+                                <h5>{project.npm}</h5>
                                 <p>{project.paragraph}</p>
                             </div>
                         </div>
@@ -71,9 +75,17 @@ width: 100%;
                     margin-bottom: 1em;
                 }
             }
+            h5{
+                font-size: 1.5em;
+                color: #424242;
+                margin: 16px 0;
+            }
             img {
                 width: 50%;
                 border-radius: 10px;
+                @media (max-width: 1050px){
+                    width: 70%;
+                }
                 @media (max-width: 750px){
                     width: 90%;
                 }
@@ -84,14 +96,18 @@ width: 100%;
                 letter-spacing: 0.5px;
                 line-height: 1.7;
             }
-            a {
-                font-size: 2em;
-                margin: 10px;
-                color: #0f4d92;
-                &:hover{
-                    color: black;
+            .link-wrapper{
+                display: flex;
+                margin: 12px 0;
+                a {
+                    font-size: 2em;
+                    margin-right: 2em;
+                    color: #0f4d92;
+                    &:hover{
+                        color: black;
+                    }
                 }
-            }
+        }
         }
         
     }
