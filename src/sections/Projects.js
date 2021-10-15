@@ -26,7 +26,7 @@ export default function Projects() {
                         return(
                             <Project
                                 id={project.id}
-                                title={project.postTitle}
+                                title={project.title}
                                 linkTitle={project.linkTitle}
                                 thumbnail={project.thumbnail}
                                 paragraph={project.paragraph}
@@ -52,10 +52,10 @@ margin-bottom: 10%;
     .project-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2em;
-        grid-row-gap: 2em;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
             @media (max-width: 750px){
                 grid-template-columns: 1fr;
-                }
+            }
         }
 `;

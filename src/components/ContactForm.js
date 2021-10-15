@@ -51,8 +51,9 @@ background: lightgray;
 justify-content: center;
 align-items: center;
 border-radius: 12px;
-margin: 5% auto;
-    @media (max-width: 750px){
+margin: 5% 0;
+margin-right: 10%;
+    @media (max-width: 850px){
         width: 100%;
     }
 h5{

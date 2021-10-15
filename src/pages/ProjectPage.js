@@ -30,8 +30,8 @@ console.log(id)
                             <div className="overlay-wrapper">
                                 <h4>{project.title}</h4>
                                 <img src={project.thumbnail} alt="" />
-                                <a href={project.websiteLink}>Project Website</a>
-                                <a href={project.githubLink}>Github</a>
+                                <a href={project.websiteLink} target="_blank" rel="noreferrer">Project Website</a>
+                                <a href={project.githubLink} target="_blank" rel="noreferrer">Github</a>
                                 <p>{project.paragraph}</p>
                             </div>
                         </div>
@@ -65,9 +65,10 @@ width: 100%;
             h4{
                 font-size: 4em;
                 color: #0f4d92;
-                margin-bottom: 1em;
+                margin-bottom: 10px;
                 @media (max-width: 750px){
                     font-size: 2.2em;
+                    margin-bottom: 1em;
                 }
             }
             img {

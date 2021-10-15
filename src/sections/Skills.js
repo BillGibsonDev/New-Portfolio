@@ -61,7 +61,7 @@ height: 100%;
 display: flex;
 justify-content: center;
 flex-direction: column;
-margin: 20% auto;
+margin-bottom: 25%;
     h2{
         font-size: 3em;
         color: #0f4d92;

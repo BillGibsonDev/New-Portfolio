@@ -13,6 +13,7 @@ html {
     scroll-behavior: smooth;
     width: 60%;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
     @media (max-width: 1450px){
         font-size: 70%;
     }  
