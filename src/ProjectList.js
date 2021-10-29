@@ -71,7 +71,7 @@ export const ProjectList = [
         websiteLink: "https://unruffled-torvalds-0f1306.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Free-Games-Api",
         build:"Built with: JavaScript and React",
-        npm: "Npm Packages: Styled Components, React Router Dom and Framer Motion",
+        npm: "Npm Packages: Axios, Styled Components, React Router Dom and Framer Motion",
     },
     {
         id: "7",
