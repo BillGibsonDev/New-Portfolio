@@ -34,8 +34,8 @@ console.log(id)
                                     <a href={project.websiteLink} target="_blank" rel="noreferrer">Project Website</a>
                                     <a href={project.githubLink} target="_blank" rel="noreferrer">Github</a>
                                 </div>
-                                <h5>{project.build}</h5>
-                                <h5>{project.npm}</h5>
+                                <h5><span>Languages:</span>{project.build}</h5>
+                                <h5><span>NPM Packages:</span>{project.npm}</h5>
                                 <p>{project.paragraph}</p>
                             </div>
                         </div>
@@ -77,8 +77,13 @@ width: 100%;
             }
             h5{
                 font-size: 1.5em;
-                color: #424242;
+                color: #000000;
                 margin: 16px 0;
+                display: flex;
+                flex-direction: column;
+                span {
+                    color: #707070;
+                }
             }
             img {
                 width: 50%;

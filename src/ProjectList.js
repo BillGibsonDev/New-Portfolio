@@ -7,6 +7,7 @@ import Rizzo from './projectImages/rizzos.png';
 import Volskya from './projectImages/volskya.png';
 import Free from './projectImages/free.png';
 import Hotely from './projectImages/hotel.png';
+import Swatter from './projectImages/swatter.png';
 
 export const ProjectList = [
     {
@@ -84,4 +85,15 @@ export const ProjectList = [
         build:"Built with: JavaScript, React, Redux, MongoDB, Express, Node and Shopify",
         npm: "Npm Packages: Styled Components and React Router Dom",
     }, 
+    {
+        id: "8",
+        title:"Swatter - Bug Tracker",
+        linkTitle:"Swatter-Bug-Tracker",
+        thumbnail: Swatter,
+        paragraph: "Swatter is a bug tracking and workflow web app I created using the MERN Stack (Mongodb, Express, React, Node). This web app is designed to organize projects with their bugs on to a webpage and allow you to create, read, update and delete them as you wish. Along with bugs you can communicate with collaberators using a comment section for each project. All of this is wrapped up with a custom login system to prevent mishandling of projects and bugs.",
+        websiteLink: "https://hardcore-bardeen-da4ef7.netlify.app/LoginPage",
+        githubLink: "https://github.com/DevGibby/Swatter-Client",
+        build: "JavaScript, React, MongoDB, Express, CSS and Node",
+        npm: "Styled Components, React Router Dom, Bcrypt, Mongoose,  Heroku and JWT",
+    },
 ]
