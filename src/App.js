@@ -13,7 +13,6 @@ import ProjectPage from './pages/ProjectPage';
 // router
 import { HashRouter, Switch , Route } from 'react-router-dom';
 
-
 function App() {
   return (
     <>
@@ -25,7 +24,6 @@ function App() {
           <Route path={'/'} exact>
                 <HomePage />
               </Route> 
-
               <Route path={["/project/:projectTitle/:id", "/"]}>
                 <ProjectPage />
               </Route>
