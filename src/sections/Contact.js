@@ -41,14 +41,14 @@ export default function Contact() {
 }
 
 const StyledContact = styled.div`
-height: 100%;
+min-height: 70vh;
 margin-top: 10%;
 display: flex;
 justify-content: center;
 position: relative;
 margin: 20vh 0;
 flex-direction: column;
-    h2{
+    h2 {
         font-size: 3em;
         color: #0f4d92;
         width: 50%;
@@ -57,7 +57,7 @@ flex-direction: column;
     .contact-wrapper{
         display: flex;
         align-items: center;
-        @media (max-width: 850px){
+        @media (max-width: 1250px){
             flex-direction: column;
             align-items: flex-start;
         }
@@ -66,7 +66,7 @@ flex-direction: column;
             width: 50%;
             flex-direction: column;
             
-            article{
+            article {
                 display: flex;
                 align-items: center;
                 margin: 10px 0;
@@ -76,7 +76,7 @@ flex-direction: column;
                     width: 50px;
                 }
                 h6, a {
-                    color: black;
+                    color: white;
                     font-size: 1.5em;
                     font-weight: 700;
                     &:hover{

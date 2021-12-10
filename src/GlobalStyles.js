@@ -11,19 +11,14 @@ const GlobalStyles = createGlobalStyle`
 html {
     margin: auto;
     scroll-behavior: smooth;
-    width: 60%;
+    width: 50%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    @media (max-width: 1375px){
-       font-size: 90%;
-    }
-    @media (max-width: 1350px){
-        width: 70%;
-    }
-    @media (max-width: 1250px){
+    background-color: #000000;
+    @media (max-width: 1050px){
         font-size: 70%;
-        width: 80%;
-    }  
+        width: 90%;
+    }
     @media (max-width: 750px){
        width: 90%;
     }

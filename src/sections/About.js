@@ -15,18 +15,23 @@ export default function About() {
 }
 
 const StyledAbout = styled.div`
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    h2{
+height: 100vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+    @media (max-width: 1050px){
+        height: 60vh;
+    }
+    h2 {
         font-size: 3em;
         color: #0f4d92;
         width: 50%;
         border-bottom: 2px solid #0f4d92;
+        margin-bottom: 20px;
     }
     p {
-        font-size: 2em;
+        color: white;
+        font-size: 1.5em;
         line-height: 2;
         letter-spacing: 1px;
     }

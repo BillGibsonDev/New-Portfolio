@@ -2,8 +2,8 @@
 // styled
 import styled from "styled-components";
 
-// images
-import Github from '../images/githubIcon.png';
+// skills images
+import Github from '../images/githubWhiteIcon.png';
 import ReactIcon from '../images/reactIcon.png';
 import HTML from '../images/html-5.png';
 import CSS from '../images/css.png';
@@ -11,8 +11,13 @@ import JS from '../images/jsIcon.png';
 import SASS from '../images/sassIcon.png';
 import Figma from '../images/figmaIcon.png';
 import PS from '../images/psIcon.png';
+import API from '../images/api-icon.png'
 
-
+// familiar images
+import Shopify from "../images/shopifyIcon.png";
+import MongoDB from "../images/mongodb.png";
+import Redux from "../images/redux-logo.png";
+import NodeIcon from "../images/node-js.png";
 
 export default function Skills() {
     return (
@@ -51,54 +56,77 @@ export default function Skills() {
                     <img src={Github} alt="" />
                     <h6>Github</h6>
                 </div>
+                <div className="icon-wrapper">
+                    <img src={API} alt="" />
+                    <h6>APIs</h6>
+                </div>
+            </div>
+            <h2 id="familiar">Familiar With</h2>
+            <div className="icon-container">
+                <div className="icon-wrapper">
+                    <img src={Shopify} alt="" />
+                    <h6>Shopify</h6>
+                </div>
+                <div className="icon-wrapper">
+                    <img src={NodeIcon} alt="" />
+                    <h6>Node.js / Express.js</h6>
+                </div>
+                <div className="icon-wrapper">
+                    <img src={MongoDB} alt="" />
+                    <h6>MongoDb</h6>
+                </div>
+                <div className="icon-wrapper">
+                    <img src={Redux} alt="" />
+                    <h6>Redux</h6>
+                </div>
             </div>
         </StyledSkills>
     )
 }
 
 const StyledSkills = styled.div`
-height: 100%;
+min-height: 50vh;
 display: flex;
 justify-content: center;
 flex-direction: column;
 margin-bottom: 25%;
-    h2{
+    h2 {
         font-size: 3em;
         color: #0f4d92;
         width: 50%;
         border-bottom: 2px solid #0f4d92;
         margin-bottom: 10px;
     }
+    #familiar {
+        margin-top: 2em;
+    }
     .icon-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 1em;
         grid-row-gap: 1em;
-            @media (max-width: 1001px){
+            @media (max-width: 1250px){
                 grid-template-columns: 1fr 1fr 1fr;
             }
-            @media (max-width: 750px){
+            @media (max-width: 850px){
                 grid-template-columns: 1fr 1fr;
             }
-        .icon-wrapper{
-            background: lightgray;
-            width: 170px;
+        .icon-wrapper {
+            background: #353535;
+            width: 100%;
             display: flex;
             align-items: center;
-            margin: 5px 0;
+            margin: 5px auto;
             padding: 6px 4px;
             border-radius: 10px;
                 img {
                     width: 50px;
                 }
                 h6 {
-                    font-size: 1em;
+                    color: white;
+                    font-size: 1.5em;
                     margin-left: 10px;
                 }
         }
     }
-    @keyframes mymove {
-        from {top: 0px;}
-        to {top: 200px;}
-}
 `;

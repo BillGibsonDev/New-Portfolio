@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 // projects
 import { ProjectList } from '../ProjectList';
 
+// components
+import SimpleSlider from '../components/SimpleSlider.js';
 
 // styled
 import styled from 'styled-components';
@@ -19,36 +21,37 @@ export default function Blogproject() {
         setProjects(ProjectList);
     }, [id])
 
-
-console.log(id)
     return (
-        <Styledproject>
+        <StyledProject>
            { 
                 projects.filter(projects => projects.id === `${id}`).map((project, key) => {
                     return (
                         <div className="overlay-content" key={key}>
                             <div className="overlay-wrapper">
                                 <h4>{project.title}</h4>
-                                <img src={project.thumbnail} alt="" />
+                                <img id="thumbnail" src={project.thumbnail} alt="" />
                                 <div className="link-wrapper">
-                                    <a href={project.websiteLink} target="_blank" rel="noreferrer">Project Website</a>
+                                    <a href={project.websiteLink} target="_blank" rel="noreferrer">Demo</a>
                                     <a href={project.githubLink} target="_blank" rel="noreferrer">Github</a>
                                 </div>
                                 <h5><span>Languages:</span>{project.build}</h5>
                                 <h5><span>NPM Packages:</span>{project.npm}</h5>
-                                <p>{project.paragraph}</p>
+                                <p><span>Description: </span>{project.paragraph}</p>
+                                    <SimpleSlider
+                                        images={project.images}
+                                    />
                             </div>
                         </div>
                     )
                 })
             }
-        </Styledproject>
+        </StyledProject>
     )
 }
 
-const Styledproject = styled.div`
-min-height: 20vh;
-margin: 2em 0;
+const StyledProject = styled.div`
+min-height: 80vh;
+margin: 5em;
 width: 100%;
     .overlay-content {
         position: relative;
@@ -60,24 +63,26 @@ width: 100%;
         @media (max-width: 750px){
             width: 90%;
         }
-        .overlay-wrapper{
+        .overlay-wrapper {
             width: 90%;
             height: 100%;
             margin: auto;
             display: flex;
             flex-direction: column;
-            h4{
+            h4 {
                 font-size: 4em;
                 color: #0f4d92;
-                margin-bottom: 10px;
+                margin-bottom: 1em;
+                border-bottom: 2px solid #0f4d92;
                 @media (max-width: 750px){
-                    font-size: 2.2em;
-                    margin-bottom: 1em;
+                    font-size: 2em;
+                    margin-bottom: 2em;
                 }
             }
-            h5{
+            h5 {
                 font-size: 1.5em;
-                color: #000000;
+                font-weight: 400;
+                color: #ffffff;
                 margin: 16px 0;
                 display: flex;
                 flex-direction: column;
@@ -86,33 +91,39 @@ width: 100%;
                 }
             }
             img {
-                width: 50%;
+                width: 100%;
                 border-radius: 10px;
-                @media (max-width: 1050px){
-                    width: 70%;
-                }
-                @media (max-width: 750px){
-                    width: 90%;
-                }
             }
-            p {
-                font-size: 2em;
-                margin: 20px 0;
-                letter-spacing: 0.5px;
-                line-height: 1.7;
+            #thumbnail {
+                width: 50%;
             }
-            .link-wrapper{
+            .link-wrapper {
                 display: flex;
                 margin: 12px 0;
                 a {
                     font-size: 2em;
+                    font-weight: 700;
                     margin-right: 2em;
                     color: #0f4d92;
+                    transition: 0.2s;
                     &:hover{
-                        color: black;
+                        color: #ffffff;
                     }
                 }
-        }
+            }
+            p {
+                color: #ffffff;
+                font-size: 1.5em;
+                margin: 20px 0 10% 0;
+                letter-spacing: 0.5px;
+                line-height: 1.7;
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-weight: 700;
+                    color: #707070;
+                }
+            }
         }
         
     }

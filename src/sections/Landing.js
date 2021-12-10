@@ -26,18 +26,21 @@ export default function Landing() {
 }
 
 const StyledLanding = styled.div`
-    height: 100vh;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
+height: 90vh;
+width: 100%;
+margin: auto;
+display: flex;
+align-items: center;
+    @media (max-width: 750px){
+        height: 70vh;
+    }
     .background{
         background: url(${Background}) top no-repeat;
         background-size: cover;
         height: 100%;
         width: 100%;
         z-index: -1;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         opacity: .1;
@@ -51,6 +54,7 @@ const StyledLanding = styled.div`
             }
         }
         h3 {
+            color: white;
             font-size: 2em;
             @media (max-width: 750px){
                font-size: 1.5em;
@@ -67,6 +71,7 @@ const StyledLanding = styled.div`
                             opacity: .7;
                             z-index: 1;
                             position: relative;
+                            transition: 0.2s;
                             &:hover{
                                 opacity: 1;
                             }

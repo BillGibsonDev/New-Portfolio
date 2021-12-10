@@ -52,10 +52,7 @@ margin-bottom: 10%;
     .project-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2rem;
+        grid-column-gap: 2em;
         grid-row-gap: 2em;
-            @media (max-width: 750px){
-                grid-template-columns: 1fr;
-            }
-        }
+    }
 `;

@@ -43,52 +43,57 @@ export default function ContactForm() {
 }
 
 const StyledForm = styled.div`
-height: 70%;
+height: 40vh;
 width: 40%;
 display: flex;
 flex-direction: column;
-background: lightgray;
+background: #353535;
 justify-content: center;
 align-items: center;
 border-radius: 12px;
 margin: 5% 0;
 margin-right: 10%;
-    @media (max-width: 850px){
+    @media (max-width: 1275px){
         width: 100%;
     }
-h5{
+h5 {
     font-size: 1.5em;
-    color: black;
+    color: white;
     font-weight: 400;
 }
 form {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 50%;
+    height: 80%;
     margin: 1em auto;
-    input{
+    label {
+        color: white;
+        font-size: 1.5em;
+    }
+    input {
         height: 30px;
     }
     textarea{
-        height: 100px;
+        height: 70%;
         margin: 10px 0;
     }
-    button{
+    button {
         width: 50%;
         height: 30px;
         margin: 0 auto;
         border: none;
         border-radius: 6px;
-        font-size: 1em;
+        font-size: 1.5em;
         font-weight: 700;
         letter-spacing: 1px;
         background: #0f4d92;
         color: white;
-        &:hover{
+        transition: 0.2s;
+        &:hover {
             cursor: pointer;
             background: black;
-            color: white;
+            color: #0f4d92;
         }
     }
 }

@@ -36,11 +36,11 @@ function closeNav() {
             <div id="myNav" className="overlay">
                 <button onClick={closeNav}>&times;</button>
                 <div className="overlayContent" onClick={closeNav}>
-                    <Link to="/#home"><img src={Home} alt="" /><span>Home</span></Link>
-                    <Link to="/#about"><img src={About} alt="" /><span>About</span></Link>
-                    <Link to="/#skills"><img src={Skills} alt="" /><span>Skills</span></Link>
-                    <Link to="/#projects"><img src={Projects} alt="" /><span>Projects</span></Link>
-                    <Link to="/#contact"><img src={Contact} alt="" /><span>Contact</span></Link>
+                    <Link to="/#home">Home</Link>
+                    <Link to="/#about">About</Link>
+                    <Link to="/#skills">Skills</Link>
+                    <Link to="/#projects">Projects</Link>
+                    <Link to="/#contact">Contact</Link>
                 </div>
             </div>
             <img id='hamburger' src={Hamburger} onClick={openNav} alt="hamburger menu"/>
@@ -49,21 +49,21 @@ function closeNav() {
 }
 
 const StyledNav = styled.div`
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 5%;
-    top: 35%;
-    z-index: 99;
-        @media (max-width: 1250px){
-            left: 0;
-        }
-        @media (max-width: 750px){
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 10vh;
-        }
+display: flex;
+flex-direction: column;
+position: fixed;
+left: 5%;
+top: 35%;
+z-index: 99;
+    @media (max-width: 1250px){
+        left: 0;
+    }
+    @media (max-width: 1050px){
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+    }
     nav {
         display: flex;
         flex-direction: column;
@@ -81,12 +81,13 @@ const StyledNav = styled.div`
                 }
             }
             span {
+                font-size: 20px;
                 margin-left: 10px;
-                color: #0f4d92;
+                color: white;
                 display: none;
             }
         }
-        @media (max-width: 750px){
+        @media (max-width: 1050px){
             display: none;
         }
     }
@@ -116,7 +117,7 @@ const StyledNav = styled.div`
                 }
                 .overlayContent {
                     position: relative;
-                    top: 25%; 
+                    top: 10%; 
                     width: 50%;
                     margin: auto;
                     margin-top: 30px;
@@ -127,15 +128,12 @@ const StyledNav = styled.div`
                         font-size: 2em;
                         color: white;
                         margin: 2em 0;
-                        transition: 0.3s; 
+                        transition: 0.3s;
+                        font-size: 3em; 
                             &:hover, &:focus {
                             color: #f1f1f1;
                             transition: 0.3s;
                             transform: scale(1.1);
-                        }
-                        img{
-                            width: 30px;
-                            margin-right: 10px;
                         }
                     }
                 } 
@@ -143,7 +141,7 @@ const StyledNav = styled.div`
             #hamburger {
                 cursor: pointer;
                 display: none;
-                width: 30px;
+                width: 50px;
                 position: absolute;
                 top: 15%;
                 right: 3%;
@@ -151,8 +149,11 @@ const StyledNav = styled.div`
                     transition: 0.3s;
                     transform: rotateZ(30deg);
                 }
-                @media (max-width: 750px){
+                @media (max-width: 1050px){
                     display: block;
+                }
+                @media (max-width: 750px){
+                    width: 35px;
                 }
             }
 `;

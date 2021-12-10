@@ -39,6 +39,7 @@ const StyledFooter = styled.div`
                 img {
                     width: 50px;
                     opacity: .7;
+                    transition: 0.2s;
                     &:hover{
                         opacity: 1;
                     }

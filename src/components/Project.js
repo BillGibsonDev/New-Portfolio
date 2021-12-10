@@ -23,8 +23,8 @@ export default function Project({
 }
 
 const StyledProject = styled.div`
-min-height: 40vh;
-margin: 2em 0;
+height: 40vh;
+margin-bottom: 5em;
 width: 100%;
 border-radius: 14px;
 position: relative;
@@ -33,9 +33,9 @@ position: relative;
         transition: 0.3s;
     }
     h4 {
-    font-size: 2em;
-    margin: 6px 0;
-    color: black;
+        font-size: 1.5em;
+        margin: 6px 0;
+        color: white;
         @media (max-width: 500px){
             font-size: 1.5em;
         }
@@ -46,10 +46,11 @@ position: relative;
         height: 100%;
         border-radius: 14px;
         box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.219);
-        img{
+        img {
             border-radius: 10px;
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
     

@@ -1,99 +1,54 @@
 
 // images
-import RDF from './projectImages/rdf.png'
-import Vespucci from './projectImages/vespucci.png';
-import Borpa from './projectImages/borpaSite.png';
-import Rizzo from './projectImages/rizzos.png';
-import Volskya from './projectImages/volskya.png';
-import Free from './projectImages/free.png';
-import Hotely from './projectImages/hotel.png';
-import Swatter from './projectImages/swatter.png';
+// real deal fit
+import RDF from './projectImages/RDF.jpg'
+import RDF1 from './projectImages/rdf.png'
+
+// swatter 
+import Swatter from './projectImages/Swatter.png';
+import Swatter1 from './projectImages/swatterBugTracker.png';
+import Swatter2 from './projectImages/swatterLogin.png';
+import Swatter3 from './projectImages/swatterProject.png';
+
+// free the games
+import Free from './projectImages/FTG.png';
+import Free1 from './projectImages/free.png';
 
 export const ProjectList = [
-    {
-        id: "1",
-        title:"Borpa Pharma Site",
-        linkTitle:"Borpa-pharma-Site",
-        thumbnail: Borpa,
-        paragraph: "Borpa Pharma Company is a basic custom design for a mock technology company. The design focuses on readability and accessiblity. This website uses a Google Maps API to display the map of the general area of the company.",
-        websiteLink: "https://optimistic-wozniak-7f917f.netlify.app/",
-        githubLink:"https://github.com/DevGibby/Borpa-Pharma-Site",
-        build:"Built with: HTML, SCSS and JavaScript",
-    },
-    {
-        id: "2",
-        title:"Hotely",
-        linkTitle:"Hotely",
-        thumbnail: Hotely,
-        paragraph: "Hotely is a React Website built using React Styled Components.  Hotely has a responsive design to keep the experience fluid throughout multiple devices.",
-        websiteLink: "https://mystifying-swirles-a6f61f.netlify.app/",
-        githubLink:"https://github.com/DevGibby/React-Hotel-Landing",
-        build:"Npm Packages: Built with: JavaScript, React and Styled Components",
-    },
-    {
-        id: "3",
-        title:"Volskya Pharmacuticals",
-        linkTitle:"Volskya-Pharmacuticals",
-        thumbnail: Volskya,
-        paragraph: "Volskya Pharmacuticals is a custom website built with React. This site was built using Styled Components and FramerMotion animation library. This website UI / UX design was built for readability and accessbility.",
-        websiteLink: "https://mystifying-swirles-a6f61f.netlify.app/",
-        githubLink:"https://github.com/DevGibby/React-Pharma-Site",
-        build:"Built with: JavaScript and React",
-        npm: "Npm Packages:Styled Components, Framer Motion and React Router Dom",
-    },
-    {
-        id: "4",
-        title:"Vespucci Photogragphy",
-        linkTitle:"Vespucci-Photogragphy",
-        thumbnail: Vespucci,
-        paragraph: "Sal Vespucci's photo site is a mock website for Vespucci Photography studio built in React. The idea of the website is to have some cool animations while displaying a gallery of the Photography studio's work.",
-        websiteLink: "https://hopeful-franklin-f3b18d.netlify.app/",
-        githubLink:"https://github.com/DevGibby/React-Photo-Site",
-        build:"Built with: JavaScript and React",
-        npm: "Npm Packages: Styled Components, Framer Motion and React Router Dom",
-    },
-    {
-        id: "5",
-        title:"Rizzo's Italian Bistro",
-        linkTitle:"Rizzos-Italian-Bistro",
-        thumbnail: Rizzo,
-        paragraph: "Rizzo's Italian Bistro Website is a React ECommerce Website built to take the customer from Landing Page all the way to Checkout. This website includes a Google Maps API to show the location of the resturant, page transition animations, Styled Components and a working form from Formspree.",
-        websiteLink: "https://heuristic-shockley-673121.netlify.app/",
-        githubLink:"https://github.com/DevGibby/React-Rizzo-Menu",
-        build:"Built with: JavaScript and React",
-        npm: "Npm Packages: Styled Components and React Router Dom",
-    },
     {
         id: "6",
         title:"Free The Games",
         linkTitle:"Free-The-Games",
         thumbnail: Free,
+        images: [Free1],
         paragraph: "Free The Games is a website built with React. This website was made with Free to Game API. I included a few animations with the Framer Motion Library. Other libraries used were Axios, React-Router and Styled-Components.",
         websiteLink: "https://unruffled-torvalds-0f1306.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Free-Games-Api",
-        build:"Built with: JavaScript and React",
-        npm: "Npm Packages: Axios, Styled Components, React Router Dom and Framer Motion",
+        build:"JavaScript and React",
+        npm: "Axios, Styled Components, React-Router-Dom and Framer Motion",
     },
     {
         id: "7",
         title:"The Real Deal Fitness",
         linkTitle:"The-Real-Deal-Fitness",
         thumbnail: RDF,
+        images: [RDF1],
         paragraph: "The Real Deal Fitness project started out as an example website I was using to learn the Shopify platform and evolved into an entire ecosystem. I have always been involved in sports and fitness. This is where I began to build the Real Deal Fitness brand. I developed a standalone blog website using React, MongoDb, Express and Node.js. This is a live website to help build my brand using fitness articles, news and more.",
         websiteLink: "https://www.trdfit.com/",
         githubLink:"https://github.com/DevGibby/New-Fit-Blog",
-        build:"Built with: JavaScript, React, Redux, MongoDB, Express, Node and Shopify",
-        npm: "Npm Packages: Styled Components and React Router Dom",
+        build:"JavaScript, React, Redux, MongoDB, Express, Node and Shopify",
+        npm: "Styled Components, Axios and React-Router-Dom",
     }, 
     {
         id: "8",
         title:"Swatter - Bug Tracker",
         linkTitle:"Swatter-Bug-Tracker",
         thumbnail: Swatter,
+        images: [Swatter1, Swatter2, Swatter3],
         paragraph: "Swatter is a bug tracking and workflow web app I created using the MERN Stack (Mongodb, Express, React, Node). This web app is designed to organize projects with their bugs on to a webpage and allow you to create, read, update and delete them as you wish. Along with bugs you can communicate with collaberators using a comment section for each project. All of this is wrapped up with a custom login system to prevent mishandling of projects and bugs.",
         websiteLink: "https://hardcore-bardeen-da4ef7.netlify.app/LoginPage",
         githubLink: "https://github.com/DevGibby/Swatter-Client",
         build: "JavaScript, React, MongoDB, Express, CSS and Node",
-        npm: "Styled Components, React Router Dom, Bcrypt, Mongoose,  Heroku and JWT",
+        npm: "Styled Components, Axios, React-Router-Dom, Bcrypt, Mongoose,  Heroku and JWT",
     },
 ]
