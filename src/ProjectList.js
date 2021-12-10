@@ -5,7 +5,7 @@ import RDF from './projectImages/RDF.jpg'
 import RDF1 from './projectImages/rdf.png'
 
 // swatter 
-import Swatter from './projectImages/Swatter.png';
+import SwatterLogo from './projectImages/Swatter.png';
 import Swatter1 from './projectImages/swatterBugTracker.png';
 import Swatter2 from './projectImages/swatterLogin.png';
 import Swatter3 from './projectImages/swatterProject.png';
@@ -43,7 +43,7 @@ export const ProjectList = [
         id: "8",
         title:"Swatter - Bug Tracker",
         linkTitle:"Swatter-Bug-Tracker",
-        thumbnail: Swatter,
+        thumbnail: SwatterLogo,
         images: [Swatter1, Swatter2, Swatter3],
         paragraph: "Swatter is a bug tracking and workflow web app I created using the MERN Stack (Mongodb, Express, React, Node). This web app is designed to organize projects with their bugs on to a webpage and allow you to create, read, update and delete them as you wish. Along with bugs you can communicate with collaberators using a comment section for each project. All of this is wrapped up with a custom login system to prevent mishandling of projects and bugs.",
         websiteLink: "https://hardcore-bardeen-da4ef7.netlify.app/LoginPage",
