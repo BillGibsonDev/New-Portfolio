@@ -1,5 +1,4 @@
 
-// images
 // real deal fit
 import RDF from './projectImages/RDF.jpg'
 import RDF1 from './projectImages/rdf.png'
