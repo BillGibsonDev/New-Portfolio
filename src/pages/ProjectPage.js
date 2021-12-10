@@ -11,7 +11,7 @@ import styled from 'styled-components';
 import { useParams } from 'react-router';
 
 
-export default function Blogproject() {
+export default function ProjectPage() {
 
     const { id } = useParams();
 
@@ -19,6 +19,7 @@ export default function Blogproject() {
 
     useEffect(() => {
         setProjects(ProjectList);
+        window.scrollTo(0, 0);
     }, [id])
 
     return (
