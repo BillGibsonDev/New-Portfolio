@@ -21,29 +21,35 @@ export default function Footer() {
 }
 
 const StyledFooter = styled.div`
-    height: 100%;
-    border-top: 3px solid #0f4d92;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
-    width: 100%;
-    h2{
+height: 100%;
+border-top: 3px solid #0f4d92;
+display: flex;
+align-items: center;
+flex-direction: column;
+margin: auto;
+width: 100%;
+    h2 {
         font-size: 3em;
         color: #0f4d92;
     }
-    .icon-container{
-        margin-top: 20px;
-            a {
-                margin-right: 10px;
-                img {
-                    width: 50px;
-                    opacity: .7;
-                    transition: 0.2s;
-                    &:hover{
-                        opacity: 1;
-                    }
+    .icon-container {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        margin: 20px auto;
+        @media (max-width: 750px){
+            width: 90%;
+        }
+        a {
+            margin-right: 10px;
+            img {
+                width: 50px;
+                opacity: .7;
+                transition: 0.2s;
+                &:hover{
+                    opacity: 1;
                 }
             }
         }
+    }
 `;

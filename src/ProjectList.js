@@ -23,10 +23,10 @@ export const ProjectList = [
         linkTitle:"Free-The-Games",
         thumbnail: Free,
         images: [Free4, Free1, Free3, Free2],
-        paragraph: "Free The Games is a website built with React. This website was made with Free to Game API. I included a few animations with the Framer Motion Library. Other libraries used were Axios, React-Router and Styled-Components.",
+        paragraph: "Free The Games is a website built with React. This website was made with Free to Game API. I included a few animations with the Framer Motion Library. Each game gets its own dynamically produced page to see more infomation about them.",
         websiteLink: "https://unruffled-torvalds-0f1306.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Free-Games-Api",
-        build:"JavaScript and React",
+        build:"CSS, JavaScript and React",
         npm: "Axios, Styled Components, React-Slick, React-Router-Dom and Framer Motion",
     },
     {

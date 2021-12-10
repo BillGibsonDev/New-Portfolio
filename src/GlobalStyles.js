@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
 html {
     margin: auto;
     scroll-behavior: smooth;
-    width: 50%;
+    width: 70%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background-color: #000000;
