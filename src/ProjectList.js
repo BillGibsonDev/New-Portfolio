@@ -4,7 +4,7 @@ import RDF from './projectImages/RDF.jpg'
 import RDF1 from './projectImages/rdf.png'
 
 // swatter 
-import SwatterLogo from './projectImages/Swatter.png';
+import SwatterLogo from './projectImages/SwatterLogo.png';
 import Swatter1 from './projectImages/swatterBugTracker.png';
 import Swatter2 from './projectImages/swatterLogin.png';
 import Swatter3 from './projectImages/swatterProject.png';
