@@ -19,6 +19,7 @@ height: 100vh;
 display: flex;
 justify-content: center;
 flex-direction: column;
+margin: 5em auto;
     @media (max-width: 1050px){
         height: 60vh;
     }
