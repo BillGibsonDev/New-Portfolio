@@ -11,7 +11,10 @@ import Swatter3 from './projectImages/swatterProject.png';
 
 // free the games
 import Free from './projectImages/FTG.png';
-import Free1 from './projectImages/free.png';
+import Free1 from './projectImages/FTG1.png';
+import Free2 from './projectImages/FTG2.png';
+import Free3 from './projectImages/FTG3.png';
+import Free4 from './projectImages/FTG4.png';
 
 export const ProjectList = [
     {
@@ -19,7 +22,7 @@ export const ProjectList = [
         title:"Free The Games",
         linkTitle:"Free-The-Games",
         thumbnail: Free,
-        images: [Free1],
+        images: [Free4, Free1, Free3, Free2],
         paragraph: "Free The Games is a website built with React. This website was made with Free to Game API. I included a few animations with the Framer Motion Library. Other libraries used were Axios, React-Router and Styled-Components.",
         websiteLink: "https://unruffled-torvalds-0f1306.netlify.app/",
         githubLink:"https://github.com/DevGibby/React-Free-Games-Api",
