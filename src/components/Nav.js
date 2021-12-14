@@ -3,11 +3,6 @@
 import styled from "styled-components";
 
 // images
-import Home from '../images/homeYaleBlue.png';
-import About from '../images/profileYaleBlue.png';
-import Projects from '../images/projectYaleBlue.png';
-import Skills from '../images/noteYaleBlue.png';
-import Contact from '../images/emailYaleBlue.png';
 import Hamburger from '../images/hamburgerYaleBlue.png';
 
 // router
@@ -26,12 +21,13 @@ function closeNav() {
 
     return (
         <StyledNav>
+            <h3 id="logo">Bill Gibson</h3>
             <nav>
-                <Link to="/#home"><img src={Home} alt="" /><span>Home</span></Link>
-                <Link to="/#about"><img src={About} alt="" /><span>About</span></Link>
-                <Link to="/#skills"><img src={Skills} alt="" /><span>Skills</span></Link>
-                <Link to="/#projects"><img src={Projects} alt="" /><span>Projects</span></Link>
-                <Link to="/#contact"><img src={Contact} alt="" /><span>Contact</span></Link>
+                <Link to="/#home">Home</Link>
+                <Link to="/#about">About</Link>
+                <Link to="/#skills">Skills</Link>
+                <Link to="/#projects">Projects</Link>
+                <Link to="/#contact">Contact</Link>
             </nav>
             <div id="myNav" className="overlay">
                 <button onClick={closeNav}>&times;</button>
@@ -50,42 +46,27 @@ function closeNav() {
 
 const StyledNav = styled.div`
 display: flex;
-flex-direction: column;
-position: fixed;
-left: 5%;
-top: 35%;
-z-index: 99;
-    @media (max-width: 1250px){
-        left: 0;
+justify-content: space-between;
+align-items: center;
+height: 10vh;
+width: 100%;
+#logo {
+    color: white;
+    font-size: 3em;
+    width: 100%;
+    @media (max-width: 400px){
+        font-size: 2.5em;
     }
-    @media (max-width: 1050px){
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 10vh;
-    }
+}
     nav {
         display: flex;
-        flex-direction: column;
-        width: 40%;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
         a {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            padding: 10px 10px;
-            border-radius: 50px;
-            img{
-                width: 30px;
-                &:hover + span{
-                    display: block;
-                }
-            }
-            span {
-                font-size: 20px;
-                margin-left: 10px;
-                color: white;
-                display: none;
-            }
+            font-size: 20px;
+            color: white;
         }
         @media (max-width: 1050px){
             display: none;
@@ -141,19 +122,17 @@ z-index: 99;
             #hamburger {
                 cursor: pointer;
                 display: none;
-                width: 50px;
-                position: absolute;
-                top: 15%;
-                right: 3%;
+                width: 40px;
+                height: 30px;
                 &:hover, &:focus {
                     transition: 0.3s;
-                    transform: rotateZ(30deg);
+                    transform: rotateZ(20deg);
                 }
                 @media (max-width: 1050px){
                     display: block;
                 }
                 @media (max-width: 750px){
-                    width: 35px;
+                    width: 30px;
                 }
             }
 `;

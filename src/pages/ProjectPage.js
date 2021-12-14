@@ -143,11 +143,17 @@ width: 100%;
                 }
             }
             .slider-container {
-                height: 100%;
+                margin: auto;
+                width: 70%;
+                height: 70%;
                 img {
                     height: 100%;
                     width: 100%;
                     border-radius: 8px;
+                }
+                @media (max-width: 750px){
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }

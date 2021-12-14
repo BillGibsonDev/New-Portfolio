@@ -13,8 +13,9 @@ export default function Landing() {
         <StyledLanding id="home">
             <div className="background"></div>
             <div className="title-container">
+                <h3>Hello, I am</h3>
                 <h1>Bill Gibson</h1>
-                <h3 className="typewriter">I am a Frontend Web Developer.</h3>
+                <h3>and I am a Frontend Web Developer.</h3>
                 <div className="icon-container">
                     <a href="https://github.com/DevGibby" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
                     <a href="https://twitter.com/DevGibby" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
@@ -26,11 +27,11 @@ export default function Landing() {
 }
 
 const StyledLanding = styled.div`
-height: 90vh;
-width: 100%;
-margin: auto;
-display: flex;
-align-items: center;
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
     @media (max-width: 750px){
         height: 70vh;
     }
@@ -45,7 +46,7 @@ align-items: center;
         left: 0;
         opacity: .1;
     }
-    .title-container{
+    .title-container {
         h1 {
             font-size: 6em;
             color: #0f4d92;
@@ -60,10 +61,10 @@ align-items: center;
                font-size: 1.5em;
             }
         }
-        .icon-container{
+        .icon-container {
             margin-top: 20px;  
                 a {
-                    margin-right: 10px;
+                    margin-right: 30px;
                     z-index: 1;
                     position: relative;
                         img {

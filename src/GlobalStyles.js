@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
-
 const GlobalStyles = createGlobalStyle`
 * {
     margin: 0;
@@ -11,16 +9,13 @@ const GlobalStyles = createGlobalStyle`
 html {
     margin: auto;
     scroll-behavior: smooth;
-    width: 70%;
+    width: 80%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background-color: #000000;
     @media (max-width: 1050px){
         font-size: 70%;
         width: 90%;
-    }
-    @media (max-width: 750px){
-       width: 90%;
     }
 }
 
