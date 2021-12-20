@@ -1,8 +1,12 @@
 
 // real deal fit
 import RDF from './projectImages/RDF.jpg'
-import RDF1 from './projectImages/rdf.png'
-
+import RDF1 from './projectImages/RDF1.png'
+import RDF2 from './projectImages/RDF2.png'
+import RDF3 from './projectImages/RDF3.png'
+import RDF4 from './projectImages/RDF4.png'
+import RDF5 from './projectImages/RDF5.png'
+import RDF6 from './projectImages/RDF6.png'
 // swatter 
 import SwatterLogo from './projectImages/SwatterLogo.png';
 import Swatter1 from './projectImages/swatterBugTracker.png';
@@ -34,7 +38,7 @@ export const ProjectList = [
         title:"The Real Deal Fitness",
         linkTitle:"The-Real-Deal-Fitness",
         thumbnail: RDF,
-        images: [RDF1],
+        images: [RDF1, RDF2, RDF3, RDF4, RDF5, RDF6],
         paragraph: "The Real Deal Fitness project started out as an example website I was using to learn the Shopify platform and evolved into an entire ecosystem. I have always been involved in sports and fitness. This is where I began to build the Real Deal Fitness brand. I developed a standalone blog website using React, MongoDb, Express and Node.js. This is a live website to help build my brand using fitness articles, news and more.",
         websiteLink: "https://www.trdfit.com/",
         githubLink:"https://github.com/DevGibby/New-Fit-Blog",

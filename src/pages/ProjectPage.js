@@ -145,7 +145,7 @@ width: 100%;
             .slider-container {
                 margin: auto;
                 width: 70%;
-                height: 70%;
+                height: 50%;
                 img {
                     height: 100%;
                     width: 100%;

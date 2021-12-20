@@ -11,7 +11,7 @@ import Background from '../images/background.jpg';
 export default function Landing() {
     return (
         <StyledLanding id="home">
-            <div className="background"></div>
+            <div className="background"><img src={Background} alt="" /></div>
             <div className="title-container">
                 <h3>Hello, I am</h3>
                 <h1>Bill Gibson</h1>
@@ -35,16 +35,21 @@ const StyledLanding = styled.div`
     @media (max-width: 750px){
         height: 70vh;
     }
-    .background{
-        background: url(${Background}) top no-repeat;
-        background-size: cover;
+    .background {
+        opacity: .1;
         height: 100%;
         width: 100%;
         z-index: -1;
         position: fixed;
         top: 0;
         left: 0;
-        opacity: .1;
+        transition: 0.3s;
+        img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
     .title-container {
         h1 {
