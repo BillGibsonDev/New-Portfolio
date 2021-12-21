@@ -7,11 +7,16 @@ import RDF3 from './projectImages/RDF3.png'
 import RDF4 from './projectImages/RDF4.png'
 import RDF5 from './projectImages/RDF5.png'
 import RDF6 from './projectImages/RDF6.png'
+
 // swatter 
 import SwatterLogo from './projectImages/SwatterLogo.png';
-import Swatter1 from './projectImages/swatterBugTracker.png';
-import Swatter2 from './projectImages/swatterLogin.png';
-import Swatter3 from './projectImages/swatterProject.png';
+import Swatter1 from './projectImages/Swatter1.png';
+import Swatter2 from './projectImages/Swatter2.png';
+import Swatter3 from './projectImages/Swatter3.png';
+import Swatter4 from './projectImages/Swatter4.png';
+import Swatter5 from './projectImages/Swatter5.png';
+import Swatter6 from './projectImages/Swatter6.png';
+import Swatter7 from './projectImages/Swatter7.png';
 
 // free the games
 import Free from './projectImages/FTG.png';
@@ -50,7 +55,7 @@ export const ProjectList = [
         title:"Swatter - Bug Tracker",
         linkTitle:"Swatter-Bug-Tracker",
         thumbnail: SwatterLogo,
-        images: [Swatter1, Swatter2, Swatter3],
+        images: [Swatter1, Swatter2, Swatter3, Swatter4, Swatter5, Swatter6, Swatter7 ],
         paragraph: "Swatter is a bug tracking and workflow web app I created using the MERN Stack (Mongodb, Express, React, Node). This web app is designed to organize projects with their bugs on to a webpage and allow you to create, read, update and delete them as you wish. Along with bugs you can communicate with collaberators using a comment section for each project. All of this is wrapped up with a custom login system to prevent mishandling of projects and bugs.",
         websiteLink: "https://hardcore-bardeen-da4ef7.netlify.app/LoginPage",
         githubLink: "https://github.com/DevGibby/Swatter-Client",
