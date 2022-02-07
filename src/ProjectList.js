@@ -25,6 +25,16 @@ import Free2 from './projectImages/FTG2.png';
 import Free3 from './projectImages/FTG3.png';
 import Free4 from './projectImages/FTG4.png';
 
+// Branded.
+import B1 from './projectImages/b1.png';
+import B2 from './projectImages/b2.png';
+import B3 from './projectImages/b3.png';
+import B4 from './projectImages/b4.png';
+import B5 from './projectImages/b5.png';
+import B6 from './projectImages/b6.png';
+
+
+
 export const ProjectList = [
     {
         id: "6",
@@ -61,5 +71,17 @@ export const ProjectList = [
         githubLink: "https://github.com/DevGibby/Swatter-Client",
         build: "JavaScript, React, MongoDB, Express, CSS and Node",
         npm: "Styled Components, Axios, React-Router-Dom, Bcrypt, Mongoose, React-Slick, Heroku and JWT",
+    },
+    {
+        id: "11",
+        title:"Branded. - React / Redux Shopping Cart",
+        linkTitle:"Branded-React-Redux-Shopping-Cart",
+        thumbnail: B1,
+        images: [B1, B2, B3, B4, B5, B6 ],
+        paragraph: "Branded is a React Website built with Free Store API, React, Redux, CSS and JavaScript. Shoppers can easily navigate the website, seamlessly add products to their shopping cart (Redux State) and view them on the separate cart page. All pages are linkable for sharing on social media, etc.",
+        websiteLink: "https://elastic-roentgen-a4f64d.netlify.app/",
+        githubLink: "https://github.com/DevGibby/New-React-Marketplace",
+        build: "JavaScript, React, CSS, Free-Store-API and Redux",
+        npm: "Styled Components, Axios, React-Router-Dom, React-Redux, Redux-Thunk",
     },
 ]
