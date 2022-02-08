@@ -15,7 +15,7 @@ export default function About() {
 }
 
 const StyledAbout = styled.div`
-height: 100vh;
+height: 60vh;
 display: flex;
 justify-content: center;
 flex-direction: column;

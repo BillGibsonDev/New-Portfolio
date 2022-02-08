@@ -74,7 +74,7 @@ export const ProjectList = [
     },
     {
         id: "11",
-        title:"Branded. - React / Redux Shopping Cart",
+        title:"Branded. - React / Redux Shop",
         linkTitle:"Branded-React-Redux-Shopping-Cart",
         thumbnail: B1,
         images: [B1, B2, B3, B4, B5, B6 ],

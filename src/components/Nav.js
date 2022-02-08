@@ -24,18 +24,18 @@ function closeNav() {
             <h3 id="logo">Bill Gibson</h3>
             <nav>
                 <Link to="/#home">Home</Link>
-                <Link to="/#about">About</Link>
                 <Link to="/#skills">Skills</Link>
                 <Link to="/#projects">Projects</Link>
+                <Link to="/#about">About</Link>
                 <Link to="/#contact">Contact</Link>
             </nav>
             <div id="myNav" className="overlay">
                 <button onClick={closeNav}>&times;</button>
                 <div className="overlayContent" onClick={closeNav}>
                     <Link to="/#home">Home</Link>
-                    <Link to="/#about">About</Link>
                     <Link to="/#skills">Skills</Link>
                     <Link to="/#projects">Projects</Link>
+                    <Link to="/#about">About</Link>
                     <Link to="/#contact">Contact</Link>
                 </div>
             </div>
@@ -67,6 +67,10 @@ width: 100%;
         a {
             font-size: 20px;
             color: white;
+            &:hover {
+                text-decoration: underline;
+                text-underline-position: under;
+            }
         }
         @media (max-width: 1050px){
             display: none;

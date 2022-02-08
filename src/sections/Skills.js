@@ -9,8 +9,6 @@ import HTML from '../images/html-5.png';
 import CSS from '../images/css.png';
 import JS from '../images/jsIcon.png';
 import SASS from '../images/sassIcon.png';
-import Figma from '../images/figmaIcon.png';
-import PS from '../images/psIcon.png';
 import API from '../images/api-icon.png'
 
 // familiar images
@@ -18,6 +16,9 @@ import Shopify from "../images/shopifyIcon.png";
 import MongoDB from "../images/mongodb.png";
 import Redux from "../images/redux-logo.png";
 import NodeIcon from "../images/node-js.png";
+import UIUX from '../images/ui-ux.png';
+import Figma from '../images/figmaIcon.png';
+import PS from '../images/psIcon.png';
 
 export default function Skills() {
     return (
@@ -45,14 +46,6 @@ export default function Skills() {
                     <h6>React</h6>
                 </div>
                 <div className="icon-wrapper">
-                    <img src={Figma} alt="" />
-                    <h6>Figma</h6>
-                </div>
-                <div className="icon-wrapper">
-                    <img src={PS} alt="" />
-                    <h6>Photoshop</h6>
-                </div>
-                <div className="icon-wrapper">
                     <img src={Github} alt="" />
                     <h6>Github</h6>
                 </div>
@@ -63,6 +56,18 @@ export default function Skills() {
             </div>
             <h2 id="familiar">Familiar With</h2>
             <div className="icon-container">
+                <div className="icon-wrapper">
+                    <img src={UIUX} alt="" />
+                    <h6>UI / UX Design</h6>
+                </div>
+                <div className="icon-wrapper">
+                    <img src={Figma} alt="" />
+                    <h6>Figma</h6>
+                </div>
+                <div className="icon-wrapper">
+                    <img src={PS} alt="" />
+                    <h6>Photoshop</h6>
+                </div>
                 <div className="icon-wrapper">
                     <img src={Shopify} alt="" />
                     <h6>Shopify</h6>

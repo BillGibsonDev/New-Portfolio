@@ -54,5 +54,9 @@ margin-bottom: 10%;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2em;
         grid-row-gap: 2em;
+        @media(max-width: 700px){
+            grid-template-columns: 1fr;
+            grid-row-gap: 1em;
+        }
     }
 `;

@@ -83,6 +83,11 @@ flex-direction: column;
                         color: #0f4d92;
                     }
                 }
+                a {
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                }
             }
         }
     }
