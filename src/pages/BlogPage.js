@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 // styled
 import styled from 'styled-components'
@@ -5,9 +7,27 @@ import styled from 'styled-components'
 // images
 import Background from "../images/blogBackground.jpg";
 
+// components
+import Post from '../components/Post.js';
+
+
 import { Link } from 'react-router-dom';
 
 export default function BlogPage() {
+
+  const [ posts, setPosts ] = useState([]);
+
+  useEffect(() => {
+    function handlePosts(){
+      axios.get(process.env.REACT_APP_GET_POSTS_URL)
+      .then((response => {
+        setPosts(response.data)
+        console.log(response.data)
+      }))
+    }
+    handlePosts();
+  }, [])
+  
   return (
     <StyledBlog>
       <div className="background"><img src={Background} alt="" /></div>
@@ -19,6 +39,20 @@ export default function BlogPage() {
         <Link to={`/blog/react`}>React</Link>
         <Link to={`/blog/apis`}>APIs</Link>
       </div>
+      {
+        posts.map((post, key) =>{
+          return(
+            <div className="postsWrapper">
+              <Post
+                title={post.title}
+                date={post.date}
+                intro={post.intro}
+                tag={post.tag}
+              />
+            </div>
+          )
+        })
+      }
     </StyledBlog>
   )
 }

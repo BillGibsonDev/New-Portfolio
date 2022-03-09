@@ -10,6 +10,7 @@ import Nav from "./components/Nav";
 import HomePage from "./pages/HomePage";
 import ProjectPage from './pages/ProjectPage';
 import BlogPage from "./pages/BlogPage";
+import PostPage from './pages/PostPage';
 
 // router
 import { Routes, Route } from 'react-router-dom';
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path='/' exact element={<HomePage />} /> 
           <Route path='/blog' exact element={<BlogPage />} /> 
+          <Route path="/blog/:postId" element={<PostPage />} />
           <Route path="/project/:projectTitle/:id" element={<ProjectPage />} />
         </Routes>
       <Footer />
