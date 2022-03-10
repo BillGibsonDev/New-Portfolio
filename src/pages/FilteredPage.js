@@ -11,9 +11,11 @@ import Background from "../images/blogBackground.jpg";
 import Post from '../components/Post.js';
 
 // router
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function BlogPage() {
+
+  const { tag } = useParams();
 
   const [ posts, setPosts ] = useState([]);
 
@@ -27,7 +29,7 @@ export default function BlogPage() {
     }
     handlePosts();
   }, [])
-  
+
   return (
     <StyledBlog>
       <div className="background"><img src={Background} alt="" /></div>
@@ -40,22 +42,31 @@ export default function BlogPage() {
         <Link to="/blog/apis">APIs</Link>
       </div>
       {
-        posts.map((post, key) =>{
-          return(
-            <div className="posts-wrapper">
-              <Post
-                title={post.title}
-                date={post.date}
-                intro={post.intro}
-                tag={post.tag}
-                thumbnail={post.thumbnail}
-                id={post.id}
-                key={key}
-              />
+        posts.filter(post => post.tag === `${tag}`).length === 0 ? (
+            <div className="placeholder">
+                <h2>Sorry No Articles found for this topic</h2>    
             </div>
-          )
-        })
-      }
+        ): (
+            <>
+                {
+                    posts.filter(post => post.tag === `${tag}`).map((post, key) =>{
+                        return (
+                            <div className="posts-wrapper">
+                                <Post
+                                    title={post.title}
+                                    date={post.date}
+                                    intro={post.intro}
+                                    tag={post.tag}
+                                    id={post.id}
+                                    key={key}
+                                />
+                            </div>
+                        )
+                    })
+                }
+            </>
+        )
+    }
     </StyledBlog>
   )
 }
@@ -100,5 +111,16 @@ const StyledBlog = styled.div`
   }
   h1 {
     color: white;
+  }
+
+  .placeholder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 40vh;
+      h2 {
+        color: white;
+      }
   }
 `;
