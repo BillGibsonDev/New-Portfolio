@@ -114,7 +114,7 @@ width: 100%;
                         justify-content: center;
                         font-size: 2em;
                         color: white;
-                        margin: 2em 0;
+                        margin: 20px;
                         transition: 0.3s;
                         font-size: 3em; 
                             &:hover, &:focus {
