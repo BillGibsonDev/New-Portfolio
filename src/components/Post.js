@@ -19,10 +19,14 @@ export default function Post({title, date, id, intro, tag, thumbnail}) {
 }
 
 const StyledPost = styled.div`
-width: 800px;
+max-width: 800px;
+width: 90%;
 height: 25vh;
 display: flex;
 margin-top: 30px;
+@media(max-width: 700px){
+  flex-direction: column;
+}
   #image-link {
     width: 40%;
     height: 100%;
