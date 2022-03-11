@@ -60,7 +60,7 @@ export default function FilteredPage() {
       <div className="placeholder">
           <h2>Sorry, No articles found for {tag}</h2>    
       </div>
-      { /*
+      { 
         posts.filter(post => post.tag === `${tag}`).length === 0 ? (
             <div className="placeholder">
                 <h2>Sorry, No articles found for {tag}</h2>    
@@ -85,7 +85,7 @@ export default function FilteredPage() {
             }
           </>
         )
-          */}
+      }
     </StyledBlog>
   )
 }
