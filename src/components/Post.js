@@ -40,6 +40,9 @@ margin-top: 30px;
     flex-direction: column;
     margin-left: 10px;
     justify-content: center;
+    @media(max-width: 700px){
+      margin-left: 0;
+    }
     a {
       font-size: 30px;
       color: white;
