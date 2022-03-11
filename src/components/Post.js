@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Post({title, date, id, intro, tag, thumbnail}) {
   return (
     <StyledPost>
-        <Link to={`/blog/${id}`}><img src={thumbnail} alt="" /></Link>
+        <Link id="image-link" to={`/blog/${id}`}><img src={thumbnail} alt="" /></Link>
         <div className="text-container">
             <Link to={`/blog/post/${id}`}>{title}</Link>
             <h4>{date}</h4>
@@ -19,9 +19,10 @@ export default function Post({title, date, id, intro, tag, thumbnail}) {
 }
 
 const StyledPost = styled.div`
- width: 800px;
-  height: 25vh;
-  display: flex;
+width: 800px;
+height: 25vh;
+display: flex;
+margin-top: 30px;
   #image-link {
     width: 40%;
     height: 100%;
@@ -37,6 +38,13 @@ const StyledPost = styled.div`
     justify-content: center;
     a {
       font-size: 30px;
+      color: white;
+      margin-bottom: 6px;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        text-underline-position: under;
+      }
     }
     h4 {
       font-size: 20px;

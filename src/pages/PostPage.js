@@ -15,7 +15,7 @@ export default function PostPage() {
 
   useEffect(() => {
     function handlePost(){
-      axios.get(`${process.env.REACT_APP_GET_POSTS_URL}/${postId}`)
+      axios.get(`${process.env.REACT_APP_GET_POST_URL}/${postId}`)
       .then((response => {
         setPost(response.data)
         console.log(response.data)
@@ -61,8 +61,12 @@ const StyledPost = styled.div`
   align-items: center;
   margin: auto;
   .post-wrapper {
-    h4 {
-      
+    margin: 20px auto 50px auto;
+    h1 {
+      color: white;
+    }
+    h2 {
+      color: #bbbbbb;
     }
     img {
       max-width: 800px;
@@ -71,6 +75,7 @@ const StyledPost = styled.div`
     .section-container {
       p {
         font-size: 20px;
+        color: white;
       }
     }
   }

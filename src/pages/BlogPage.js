@@ -55,7 +55,7 @@ export default function BlogPage() {
                       intro={post.intro}
                       tag={post.tag}
                       thumbnail={post.thumbnail}
-                      id={post.id}
+                      id={post._id}
                       key={key}
                     />
                   </div>
