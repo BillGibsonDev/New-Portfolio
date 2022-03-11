@@ -9,27 +9,26 @@ import Nav from "./components/Nav";
 // pages
 import HomePage from "./pages/HomePage";
 import ProjectPage from './pages/ProjectPage';
+import BlogPage from "./pages/BlogPage";
+import PostPage from './pages/PostPage';
+import FilteredPage from './pages/FilteredPage';
 
 // router
-import { HashRouter, Switch , Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <HashRouter>
-          <Nav />
-          <Switch>
-
-          <Route path={'/'} exact>
-                <HomePage />
-              </Route> 
-              <Route path={["/project/:projectTitle/:id", "/"]}>
-                <ProjectPage />
-              </Route>
-          </Switch>
-          <Footer />
-      </HashRouter>
+      <Nav />
+        <Routes>
+          <Route path='/' exact element={<HomePage />} /> 
+          <Route path='/blog' exact element={<BlogPage />} /> 
+          <Route path="/blog/post/:id" element={<PostPage />} />
+          <Route path="/blog/:tag" element={<FilteredPage />} />
+          <Route path="/project/:projectTitle/:id" element={<ProjectPage />} />
+        </Routes>
+      <Footer />
     </>
   );
 }
