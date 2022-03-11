@@ -57,9 +57,6 @@ export default function FilteredPage() {
     <StyledBlog>
       <div className="background"><img src={Background} alt="" /></div>
       <Filter tag={tag} />
-      <div className="placeholder">
-          <h2>Sorry, No articles found for {tag}</h2>    
-      </div>
       { 
         posts.filter(post => post.tag === `${tag}`).length === 0 ? (
             <div className="placeholder">
