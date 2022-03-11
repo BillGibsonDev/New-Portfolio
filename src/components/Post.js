@@ -19,5 +19,28 @@ export default function Post({title, date, id, intro, tag, thumbnail}) {
 }
 
 const StyledPost = styled.div`
-
+ width: 800px;
+  height: 25vh;
+  display: flex;
+  #image-link {
+    width: 40%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: center;
+    a {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 20px;
+      color: #bbbbbb;
+    }
+  }
 `;
