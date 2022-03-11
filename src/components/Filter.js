@@ -23,12 +23,10 @@ export default function Filter() {
   return (
     <StyledFilter>
         <Link className="filter" id="all" to="/blog">All</Link>
-        <Link className="filter" id="html" to="/blog/html">HTML</Link>
         <Link className="filter" id="css" to="/blog/css">CSS</Link>
         <Link className="filter" id="javascript" to="/blog/javascript">JavaScript</Link>
         <Link className="filter" id="react" to="/blog/react">React</Link>
         <Link className="filter" id="apis" to="/blog/apis">APIs</Link>
-        <Link className="filter" id="other" to="/blog/other">Other</Link>
     </StyledFilter>
   )
 }
@@ -39,7 +37,7 @@ width: 60%;
 align-items: center;
 justify-content: space-between;
 margin-top: 20px;
-    @media(max-width: 1050px){
+    @media(max-width: 1250px){
       width: 90%;
     }
     @media(max-width: 700px){

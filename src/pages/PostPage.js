@@ -18,7 +18,6 @@ export default function PostPage() {
       axios.get(`${process.env.REACT_APP_GET_POST_URL}/${postId}`)
       .then((response => {
         setPost(response.data)
-        console.log(response.data)
       }))
     }
     handlePost();
@@ -55,7 +54,7 @@ export default function PostPage() {
 
 const StyledPost = styled.div`
   min-height: 70vh;
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;

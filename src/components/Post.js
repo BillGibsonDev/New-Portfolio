@@ -19,20 +19,25 @@ export default function Post({title, date, id, intro, tag, thumbnail}) {
 }
 
 const StyledPost = styled.div`
-max-width: 800px;
-width: 90%;
-height: 25vh;
-display: flex;
-margin-top: 30px;
-@media(max-width: 700px){
-  flex-direction: column;
-}
+  max-width: 1200px;
+  width: 100%;
+  min-height: 25vh;
+  height: 400px;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  background: #4e4b4b;
+  @media(max-width: 870px){
+    flex-direction: column;
+  }
   #image-link {
-    width: 40%;
+    width: 50%;
     height: 100%;
-    @media(max-width: 700px){
+    @media(max-width: 1070px){
+      width: 60%;
+    }
+    @media(max-width: 920px){
       width: 100%;
-      
     }
     img {
       width: 100%;
@@ -42,15 +47,24 @@ margin-top: 30px;
   .text-container {
     display: flex;
     flex-direction: column;
+    background: #4e4b4b;
     margin-left: 10px;
     justify-content: center;
-    @media(max-width: 700px){
-      margin-left: 0;
+    width: 50%;
+    @media(max-width: 920px){
+      background: #4e4b4b;
+      width: 100%;
+    }
+    @media(max-width: 920px){
+      margin: auto;
     }
     a {
       font-size: 30px;
       color: white;
       margin-bottom: 6px;
+      @media(max-width: 920px){
+        margin-left: 10px;
+      }
       &:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -60,6 +74,9 @@ margin-top: 30px;
     h4 {
       font-size: 20px;
       color: #bbbbbb;
+      @media(max-width: 920px){
+        margin-left: 10px;
+      }
     }
   }
 `;

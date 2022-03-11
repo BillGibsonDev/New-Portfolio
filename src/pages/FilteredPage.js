@@ -2,14 +2,13 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // styled
-import styled from 'styled-components'
-
-// images
-import Background from "../images/blogBackground.jpg";
+import styled from 'styled-components';
+import { StyledBlog } from '../styled/StyledBlog';
 
 // components
 import Post from '../components/Post.js';
 import Filter from '../components/Filter.js';
+import BackgroundImage from '../components/BlogBackgroundImage.js';
 
 // router
 import { useParams } from 'react-router-dom';
@@ -25,7 +24,6 @@ export default function FilteredPage() {
       axios.get(`${process.env.REACT_APP_GET_POSTS_URL}`)
       .then((response => {
         setPosts(response.data)
-        console.log(response.data)
       }))
     }
     handlePosts();
@@ -54,62 +52,41 @@ export default function FilteredPage() {
   }, [tag])
 
   return (
-    <StyledBlog>
-      <div className="background"><img src={Background} alt="" /></div>
-      <Filter tag={tag} />
-      { 
-        posts.filter(post => post.tag === `${tag}`).length === 0 ? (
-            <div className="placeholder">
-                <h2>Sorry, No articles found for {tag}</h2>    
-            </div>
-        ): (
-          <>
-            {
-              posts.filter(post => post.tag === `${tag}`).map((post, key) =>{
-                return (
-                  <div className="posts-wrapper">
-                    <Post
+    <StyledBlogPage>
+      <StyledBlog>
+        <BackgroundImage />
+        <Filter tag={tag} />
+        { 
+          posts.filter(post => post.tag === `${tag}`).length === 0 ? (
+              <div className="placeholder">
+                  <h2>Sorry, No articles found for {tag}</h2>    
+              </div>
+          ): (
+            <>
+              {
+                posts.filter(post => post.tag === `${tag}`).map((post, key) =>{
+                  return (
+                    <div className="posts-wrapper" key={key}>
+                      <Post
                         title={post.title}
                         date={post.date}
                         intro={post.intro}
                         tag={post.tag}
                         id={post.id}
-                        key={key}
-                    />
-                  </div>
-                )
-              })
-            }
-          </>
-        )
-      }
-    </StyledBlog>
+                      />
+                    </div>
+                  )
+                })
+              }
+            </>
+          )
+        }
+      </StyledBlog>
+    </StyledBlogPage>
   )
 }
 
-const StyledBlog = styled.div`
-  min-height: 70vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  .background {
-    opacity: .1;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 0.3s;
-    img {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
+const StyledBlogPage = styled.div`
   h1 {
     color: white;
   }

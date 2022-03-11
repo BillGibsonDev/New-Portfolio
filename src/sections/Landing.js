@@ -6,12 +6,10 @@ import styled from "styled-components";
 import Git from '../images/githubYaleBlue.png';
 import Twitter from '../images/twitterYaleBlue.png';
 import Linkedin from '../images/linkedinYaleBlue.png';
-import Background from '../images/background.jpg';
 
 export default function Landing() {
     return (
         <StyledLanding id="home">
-            <div className="background"><img src={Background} alt="" /></div>
             <div className="title-container">
                 <h3>Hello, I am</h3>
                 <h1>Bill Gibson</h1>
