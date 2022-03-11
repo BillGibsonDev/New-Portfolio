@@ -25,7 +25,7 @@ export default function Nav() {
             <img id="logo" src={BG} alt="logo"/>
             <nav>
                 <Link to="/">Home</Link>
-                <Link to="/blog">Blog</Link>
+                <Link to="/">Blog</Link>
                 <Link to="/#skills">Skills</Link>
                 <Link to="/#projects">Projects</Link>
                 <Link to="/#about">About</Link>
@@ -35,7 +35,7 @@ export default function Nav() {
                 <button onClick={closeNav}>&times;</button>
                 <div className="overlayContent" onClick={closeNav}>
                     <Link to="/">Home</Link>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/">Blog</Link>
                     <Link to="/#skills">Skills</Link>
                     <Link to="/#projects">Projects</Link>
                     <Link to="/#about">About</Link>
