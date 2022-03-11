@@ -42,7 +42,7 @@ export default function BlogPage() {
       <Filter />
       <h1>Posts Coming Soon!</h1>
       { 
-        posts.length === 0 ? (
+        posts.length === [] ? (
           <h1>Posts Coming Soon!</h1>
         ): (
           <>
