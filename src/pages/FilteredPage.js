@@ -9,11 +9,12 @@ import Background from "../images/blogBackground.jpg";
 
 // components
 import Post from '../components/Post.js';
+import Filter from '../components/Filter.js';
 
 // router
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-export default function BlogPage() {
+export default function FilteredPage() {
 
   const { tag } = useParams();
 
@@ -30,43 +31,58 @@ export default function BlogPage() {
     handlePosts();
   }, [])
 
+  let buttons = document.getElementsByClassName("filter");
+
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+        let current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+            current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+    });
+  }
+
+  // because the filter links send you to a new page this snippet uses the params of tag
+  // to select and add the active class
+  useEffect(() => {
+    function handleActive(){
+      let activeTag = document.getElementById(`${tag}`)
+      activeTag.className += " active";
+    }
+    handleActive();
+  }, [tag])
+
   return (
     <StyledBlog>
       <div className="background"><img src={Background} alt="" /></div>
-      <div className="filter-container">
-        <Link to="/blog">All</Link>
-        <Link to="/blog/html">HTML</Link>
-        <Link to="/blog/css">CSS</Link>
-        <Link to="/blog/javascript">JavaScript</Link>
-        <Link to="/blog/react">React</Link>
-        <Link to="/blog/apis">APIs</Link>
-      </div>
+      <Filter tag={tag} />
       {
         posts.filter(post => post.tag === `${tag}`).length === 0 ? (
             <div className="placeholder">
-                <h2>Sorry No Articles found for this topic</h2>    
+                <h2>Sorry, No articles found for {tag}</h2>    
             </div>
         ): (
-            <>
-                {
-                    posts.filter(post => post.tag === `${tag}`).map((post, key) =>{
-                        return (
-                            <div className="posts-wrapper">
-                                <Post
-                                    title={post.title}
-                                    date={post.date}
-                                    intro={post.intro}
-                                    tag={post.tag}
-                                    id={post.id}
-                                    key={key}
-                                />
-                            </div>
-                        )
-                    })
-                }
-            </>
+          <>
+            {
+              posts.filter(post => post.tag === `${tag}`).map((post, key) =>{
+                return (
+                  <div className="posts-wrapper">
+                    <Post
+                        title={post.title}
+                        date={post.date}
+                        intro={post.intro}
+                        tag={post.tag}
+                        id={post.id}
+                        key={key}
+                    />
+                  </div>
+                )
+              })
+            }
+          </>
         )
-    }
+      }
     </StyledBlog>
   )
 }
@@ -94,33 +110,18 @@ const StyledBlog = styled.div`
       object-fit: cover;
     }
   }
-  .filter-container {
-    display: flex;
-    width: 60%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    a {
-      color: #bbbbbb;
-      font-size: 20px;
-      &:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-      }
-    }
-  }
   h1 {
     color: white;
   }
-
   .placeholder {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 40vh;
-      h2 {
-        color: white;
-      }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    h2 {
+      color: white;
+      text-align: center;
+    }
   }
 `;

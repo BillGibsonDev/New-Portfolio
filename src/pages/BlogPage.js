@@ -9,9 +9,7 @@ import Background from "../images/blogBackground.jpg";
 
 // components
 import Post from '../components/Post.js';
-
-// router
-import { Link } from 'react-router-dom';
+import Filter from '../components/Filter';
 
 export default function BlogPage() {
 
@@ -28,33 +26,44 @@ export default function BlogPage() {
     handlePosts();
   }, [])
   
+  // since the filters send you to a new page, this is to add the active class 
+  // to "all" onload to prevent mixups
+  useEffect(() => {
+    function handleActive(){
+      let activeTag = document.getElementById('all')
+      activeTag.className += " active";
+    }
+    handleActive();
+  }, [])
+
   return (
     <StyledBlog>
       <div className="background"><img src={Background} alt="" /></div>
-      <div className="filter-container">
-        <Link to="/blog">All</Link>
-        <Link to="/blog/html">HTML</Link>
-        <Link to="/blog/css">CSS</Link>
-        <Link to="/blog/javascript">JavaScript</Link>
-        <Link to="/blog/react">React</Link>
-        <Link to="/blog/apis">APIs</Link>
-      </div>
+      <Filter />
       {
-        posts.map((post, key) =>{
-          return(
-            <div className="posts-wrapper">
-              <Post
-                title={post.title}
-                date={post.date}
-                intro={post.intro}
-                tag={post.tag}
-                thumbnail={post.thumbnail}
-                id={post.id}
-                key={key}
-              />
-            </div>
-          )
-        })
+        posts.length === 0 ? (
+          <h1>Posts Coming Soon!</h1>
+        ): (
+          <>
+            {
+              posts.map((post, key) =>{
+                return(
+                  <div className="posts-wrapper">
+                    <Post
+                      title={post.title}
+                      date={post.date}
+                      intro={post.intro}
+                      tag={post.tag}
+                      thumbnail={post.thumbnail}
+                      id={post.id}
+                      key={key}
+                    />
+                  </div>
+                )
+              })
+            }
+          </>
+        )
       }
     </StyledBlog>
   )
@@ -83,22 +92,10 @@ const StyledBlog = styled.div`
       object-fit: cover;
     }
   }
-  .filter-container {
-    display: flex;
-    width: 60%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    a {
-      color: #bbbbbb;
-      font-size: 20px;
-      &:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-      }
-    }
-  }
   h1 {
     color: white;
+    font-size: 36px;
+    margin-top: 80px;
+    text-align: center;
   }
 `;
