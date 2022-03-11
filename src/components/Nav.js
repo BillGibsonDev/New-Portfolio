@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 // images
 import Hamburger from '../images/hamburgerYaleBlue.png';
+import BG from '../images/BG.png';
 
 // router
 import { HashLink as Link } from 'react-router-hash-link';
@@ -11,19 +12,20 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Nav() {
 
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
 
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
 
     return (
         <StyledNav>
-            <h3 id="logo">Bill Gibson</h3>
+            <img id="logo" src={BG} alt="logo"/>
             <nav>
-                <Link to="/#home">Home</Link>
+                <Link to="/">Home</Link>
+                <Link to="/blog">Blog</Link>
                 <Link to="/#skills">Skills</Link>
                 <Link to="/#projects">Projects</Link>
                 <Link to="/#about">About</Link>
@@ -32,7 +34,8 @@ function closeNav() {
             <div id="myNav" className="overlay">
                 <button onClick={closeNav}>&times;</button>
                 <div className="overlayContent" onClick={closeNav}>
-                    <Link to="/#home">Home</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/blog">Blog</Link>
                     <Link to="/#skills">Skills</Link>
                     <Link to="/#projects">Projects</Link>
                     <Link to="/#about">About</Link>
@@ -50,19 +53,15 @@ justify-content: space-between;
 align-items: center;
 height: 10vh;
 width: 100%;
-#logo {
-    color: white;
-    font-size: 3em;
-    width: 100%;
-    @media (max-width: 400px){
-        font-size: 2.5em;
+    #logo {
+        width: 50px;
+        height: 50px;
     }
-}
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 50%;
         height: 100%;
         a {
             font-size: 20px;
@@ -71,6 +70,9 @@ width: 100%;
                 text-decoration: underline;
                 text-underline-position: under;
             }
+        }
+        @media (max-width: 1250px){
+            width: 60%;
         }
         @media (max-width: 1050px){
             display: none;
