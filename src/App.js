@@ -23,7 +23,7 @@ function App() {
       <Nav />
         <Routes>
           <Route path='/' exact element={<HomePage />} /> 
-          <Route path='/blog' exact element={<BlogPage />} /> 
+          <Route path='/blog' element={<BlogPage />} /> 
           <Route path="/blog/post/:id" element={<PostPage />} />
           <Route path="/blog/:tag" element={<FilteredPage />} />
           <Route path="/project/:projectTitle/:id" element={<ProjectPage />} />
