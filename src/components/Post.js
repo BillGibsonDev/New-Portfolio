@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Post({title, date, id, intro, tag, thumbnail}) {
   return (
     <StyledPost>
-        <Link id="image-link" to={`/blog/${id}`}><img src={thumbnail} alt="" /></Link>
+        <Link id="image-link" to={`/blog/post/${id}`}><img src={thumbnail} alt="" /></Link>
         <div className="text-container">
             <Link to={`/blog/post/${id}`}>{title}</Link>
             <h4>{date}</h4>
@@ -30,6 +30,10 @@ margin-top: 30px;
   #image-link {
     width: 40%;
     height: 100%;
+    @media(max-width: 700px){
+      width: 100%;
+      
+    }
     img {
       width: 100%;
       height: 100%;
