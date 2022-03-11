@@ -40,7 +40,8 @@ export default function BlogPage() {
     <StyledBlog>
       <div className="background"><img src={Background} alt="" /></div>
       <Filter />
-      {
+      <h1>Posts Coming Soon!</h1>
+      { /*
         posts.length === 0 ? (
           <h1>Posts Coming Soon!</h1>
         ): (
@@ -64,7 +65,7 @@ export default function BlogPage() {
             }
           </>
         )
-      }
+          */}
     </StyledBlog>
   )
 }
