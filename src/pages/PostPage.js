@@ -60,5 +60,18 @@ const StyledPost = styled.div`
   flex-direction: column;
   align-items: center;
   margin: auto;
-  
+  .post-wrapper {
+    h4 {
+      
+    }
+    img {
+      max-width: 800px;
+      width: 70%;
+    }
+    .section-container {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
 `;
