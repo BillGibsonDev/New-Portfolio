@@ -1,1 +1,1 @@
-Greetongs Traveler! You have reached my personal portfolio!
+Greetings Traveler! You have reached my personal portfolio!
