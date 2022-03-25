@@ -21,8 +21,8 @@ export default function Post({title, date, id, intro, tag, thumbnail}) {
 const StyledPost = styled.div`
   max-width: 1200px;
   width: 100%;
-  min-height: 25vh;
-  height: 400px;
+  min-height: 20vh;
+  height: 300px;
   display: flex;
   margin: auto;
   margin-top: 30px;
