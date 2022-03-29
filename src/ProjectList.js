@@ -33,48 +33,42 @@ import B4 from './projectImages/b4.png';
 import B5 from './projectImages/b5.png';
 import B6 from './projectImages/b6.png';
 
+// Via.
+import V1 from './projectImages/VN1.png';
+import V2 from './projectImages/VN2.png';
+import V3 from './projectImages/VN3.png';
+import V4 from './projectImages/VN4.png';
+import V5 from './projectImages/VN5.png';
 
 
 export const ProjectList = [
     {
-        id: "6",
-        title:"Free The Games",
-        linkTitle:"Free-The-Games",
-        thumbnail: Free,
-        images: [Free4, Free1, Free3, Free2],
-        paragraph: "Free The Games is a website built with React. This website was made with Free to Game API. I included a few animations with the Framer Motion Library. Each game gets its own dynamically produced page to see more infomation about them.",
-        websiteLink: "https://unruffled-torvalds-0f1306.netlify.app/",
-        githubLink:"https://github.com/DevGibby/React-Free-Games-Api",
-        build:"CSS, JavaScript and React",
-        npm: "Axios, Styled Components, React-Slick, React-Router-Dom and Framer Motion",
+        id: "1",
+        title:"Via Napoli - React / Redux Website",
+        linkTitle:"Via-Napoli",
+        thumbnail: V1,
+        images: [V1, V2, V3, V4, V5 ],
+        paragraph: "The Via Napoli website is built using CSS, React, Redux and a custom database I created for this project. This website allows users to “order” from a pizzeria, add items with specific quantities to the order using Redux and view them on a separate order page.  Each item has its own page dynamically generated for that specific item that gives more information about the item.",
+        websiteLink: "https://zealous-northcutt-991377.netlify.app/",
+        githubLink: "https://github.com/DevGibby/React-Redux-Menu",
+        build: "JavaScript, CSS, React, Redux and a custom database",
+        npm: "Styled Components, Axios, React-Router-Dom, React-Redux, Redux-Thunk",
     },
     {
-        id: "7",
-        title:"Veritable Fitness",
-        linkTitle:"Veritable-Fitness",
-        thumbnail: RDF,
-        images: [RDF1, RDF2, RDF3, RDF4, RDF5, RDF6],
-        paragraph: "Veritable Fitness project started out as an example website I was using to learn the Shopify platform and evolved into an entire ecosystem. I have always been involved in sports and fitness. This is where I began to build the Real Deal Fitness brand. I developed a standalone blog website using React, MongoDb, Express and Node.js. This is a live website to help build my brand using fitness articles, news and more.",
-        websiteLink: "https://www.trdfit.com/",
-        githubLink:"https://github.com/DevGibby/New-Fit-Blog",
-        build:"JavaScript, React, Redux, MongoDB, Express, Node and Shopify",
-        npm: "Styled Components, Axios and React-Router-Dom",
-    }, 
-    {
-        id: "8",
-        title:"Swatter - Bug Tracker",
+        id: "2",
+        title:"Swatter - Bug Tracker - Full Stack",
         linkTitle:"Swatter-Bug-Tracker",
         thumbnail: SwatterLogo,
         images: [Swatter1, Swatter2, Swatter3, Swatter4, Swatter5, Swatter6, Swatter7 ],
-        paragraph: "Swatter is a bug tracking and workflow web app I created using the MERN Stack (Mongodb, Express, React, Node). This web app is designed to organize projects with their bugs on to a webpage and allow you to create, read, update and delete them as you wish. Along with bugs you can communicate with collaberators using a comment section for each project. All of this is wrapped up with a custom login system to prevent mishandling of projects and bugs.",
+        paragraph: "Swatter is a bug tracking and workflow web app I created using the MERN Stack (Mongodb, Express, React, Node). This web app is designed to organize projects with their bugs onto a webpage and allow you to create, read, update and delete them as you wish. Along with bugs you can communicate with collaborators using a comment section for each project. All of this is wrapped up with a custom login system to prevent mishandling of projects and bugs.",
         websiteLink: "https://hardcore-bardeen-da4ef7.netlify.app/LoginPage",
         githubLink: "https://github.com/DevGibby/Swatter-Client",
         build: "JavaScript, React, MongoDB, Express, CSS and Node",
         npm: "Styled Components, Axios, React-Router-Dom, Bcrypt, Mongoose, React-Slick, Heroku and JWT",
     },
     {
-        id: "11",
-        title:"Branded. - React / Redux Shop",
+        id: "3",
+        title:"Branded. - React / Redux Website",
         linkTitle:"Branded-React-Redux-Shopping-Cart",
         thumbnail: B1,
         images: [B1, B2, B3, B4, B5, B6 ],
@@ -84,4 +78,28 @@ export const ProjectList = [
         build: "JavaScript, React, CSS, Free-Store-API and Redux",
         npm: "Styled Components, Axios, React-Router-Dom, React-Redux, Redux-Thunk",
     },
+    {
+        id: "4",
+        title:"Free The Games - React Website",
+        linkTitle:"Free-The-Games",
+        thumbnail: Free,
+        images: [Free4, Free1, Free3, Free2],
+        paragraph: "Free The Games is a website built with React using the Free to Game API. I included a few animations with the Framer Motion Library. Each game is created on the page from the API and provides a link to a dynamically added page for that specific game. The dynamically created page will provide users with that game's information and links.",
+        websiteLink: "https://unruffled-torvalds-0f1306.netlify.app/",
+        githubLink:"https://github.com/DevGibby/React-Free-Games-Api",
+        build:"CSS, JavaScript and React",
+        npm: "Axios, Styled Components, React-Slick, React-Router-Dom and Framer Motion",
+    },
+    {
+        id: "5",
+        title:"Veritable Fitness - Full Stack",
+        linkTitle:"Veritable-Fitness",
+        thumbnail: RDF,
+        images: [RDF1, RDF2, RDF3, RDF4, RDF5, RDF6],
+        paragraph: "The Veritable Fitness project started out as an example website I was using to learn the Shopify platform and evolved into an entire ecosystem. I have always been involved in sports and fitness. This is where I began to build the Real Deal Fitness brand. I developed a standalone blog website using React, MongoDb, Express and Node.js. This is a live website to help build my brand using fitness articles, news and more.",
+        websiteLink: "https://www.trdfit.com/",
+        githubLink:"https://github.com/DevGibby/New-Fit-Blog",
+        build:"JavaScript, React, Redux, MongoDB, Express, Node and Shopify",
+        npm: "Styled Components, Axios and React-Router-Dom",
+    }, 
 ]

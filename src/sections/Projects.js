@@ -22,7 +22,7 @@ export default function Projects() {
             <h2>Projects</h2>
             <div className="project-container">
                 {
-                    projects.slice().reverse().map((project, key) =>{
+                    projects.map((project, key) =>{
                         return(
                             <Project
                                 id={project.id}

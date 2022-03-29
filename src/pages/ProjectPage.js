@@ -93,6 +93,8 @@ width: 100%;
                 #thumbnail {
                     width: 45%;
                     border-radius: 8px;
+                    max-height: 400px;
+                    object-fit: cover;
                     @media (max-width: 750px){
                         width: 100%;
                     }

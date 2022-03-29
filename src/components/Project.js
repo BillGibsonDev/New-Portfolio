@@ -9,13 +9,13 @@ export default function Project({
     id, 
     title, 
     thumbnail, 
-    projectTitle,
+    linkTitle,
 }) {
 
     return (
         <StyledProject id={id}>
             <h4>{title}</h4>
-            <Link to={`/project/${projectTitle}/${id}`}>
+            <Link to={`/project/${linkTitle}/${id}`}>
                 <img src={thumbnail} alt={thumbnail} />
             </Link>
         </StyledProject>
