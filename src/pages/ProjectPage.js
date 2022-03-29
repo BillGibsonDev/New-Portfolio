@@ -8,6 +8,8 @@ import SimpleSlider from '../components/SimpleSlider.js';
 
 // styled
 import styled from 'styled-components';
+
+//router
 import { useParams } from 'react-router';
 
 
