@@ -15,8 +15,8 @@ export default function Landing() {
                 <h1>Bill Gibson</h1>
                 <h3>and I am a Frontend Web Developer.</h3>
                 <div className="icon-container">
-                    <a href="https://github.com/DevGibby" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
-                    <a href="https://twitter.com/DevGibby" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
+                    <a href="https://github.com/GibbyCodes" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
+                    <a href="https://twitter.com/GibbyCodes" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
                     <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="" /></a>
                 </div>
             </div>
