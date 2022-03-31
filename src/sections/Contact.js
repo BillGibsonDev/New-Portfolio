@@ -24,11 +24,11 @@ export default function Contact() {
                     </article>
                     <article>
                         <img src={Git} alt="" />
-                        <a href="https://github.com/DevGibby" target="_blank" rel="noreferrer">DevGibby</a>
+                        <a href="https://github.com/GibbyCodes" target="_blank" rel="noreferrer">GibbyCodes</a>
                     </article>
                     <article>
                         <img src={Twitter} alt="" />
-                        <a href="https://twitter.com/DevGibby" target="_blank" rel="noreferrer">@DevGibby</a>
+                        <a href="https://twitter.com/GibbyCodes" target="_blank" rel="noreferrer">@GibbyCodes</a>
                     </article>
                     <article>
                         <img src={Linkedin} alt="" />
@@ -65,7 +65,6 @@ flex-direction: column;
             display: flex;
             width: 50%;
             flex-direction: column;
-            
             article {
                 display: flex;
                 align-items: center;
@@ -84,9 +83,10 @@ flex-direction: column;
                     }
                 }
                 a {
-                &:hover {
-                    text-decoration: underline;
-                    text-underline-position: under;
+                    &:hover {
+                        text-decoration: underline;
+                        text-underline-position: under;
+                    }
                 }
             }
         }
