@@ -6,6 +6,8 @@ import styled from "styled-components";
 import Git from '../images/githubYaleBlue.png';
 import Twitter from '../images/twitterYaleBlue.png';
 import Linkedin from '../images/linkedinYaleBlue.png';
+import Upwork from '../images/upworkIconYaleBlue.png';
+import Fiverr from '../images/fiverrYaleBlue.png';
 
 export default function Landing() {
     return (
@@ -18,6 +20,8 @@ export default function Landing() {
                     <a href="https://github.com/GibbyCodes" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
                     <a href="https://twitter.com/GibbyCodes" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
                     <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="" /></a>
+                                        <a href="https://www.fiverr.com/gibby_designs?up_rollout=true" target="_blank" rel="noreferrer"><img src={Fiverr} alt="" /></a>
+                    <a href="https://www.upwork.com/freelancers/~01c291154f7c452996" target="_blank" rel="noreferrer"><img src={Upwork} alt="" /></a>
                 </div>
             </div>
         </StyledLanding>
@@ -78,6 +82,9 @@ const StyledLanding = styled.div`
                             transition: 0.2s;
                             &:hover{
                                 opacity: 1;
+                            }
+                            @media (max-width: 750px){
+                                width: 35px;
                             }
                         }
                 }

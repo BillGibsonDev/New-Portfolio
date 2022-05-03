@@ -35,7 +35,7 @@ export default function Skills() {
                 </div>
                 <div className="icon-wrapper">
                     <img src={SASS} alt="" />
-                    <h6>SASS / SCSS</h6>
+                    <h6>SASS</h6>
                 </div>
                 <div className="icon-wrapper">
                     <img src={JS} alt="" />
