@@ -29,8 +29,8 @@ export default function Nav() {
                 <Link to="/#skills">Skills</Link>
                 <Link to="/#projects">Projects</Link>
                 <Link to="/#about">About</Link>
-                <Link to="/#contact">Contact</Link>
             </nav>
+            <Link id="nav-button" to="/#contact">Contact</Link>
             <div id="myNav" className="overlay">
                 <button onClick={closeNav}>&times;</button>
                 <div className="overlayContent" onClick={closeNav}>
@@ -48,20 +48,23 @@ export default function Nav() {
 }
 
 const StyledNav = styled.div`
-display: flex;
-justify-content: space-between;
+display: grid;
+grid-template-columns: 25% 50% 25%;
 align-items: center;
 height: 10vh;
 width: 100%;
+    @media (max-width: 1050px){
+        grid-template-columns: 50% 50%;
+    }
     #logo {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 50%;
+        width: 100%;
         height: 100%;
         a {
             font-size: 20px;
@@ -71,8 +74,21 @@ width: 100%;
                 text-underline-position: under;
             }
         }
-        @media (max-width: 1250px){
-            width: 60%;
+        @media (max-width: 1050px){
+            display: none;
+        }
+    }
+    #nav-button {
+        margin-left: auto;
+        padding: 10px 20px;
+        background: #0f4d92;
+        border: 1px solid #0f4d92;
+        color: white;
+        border-radius: 8px;
+        &:hover {
+            background: white;
+            color: #0f4d92;
+            transition: 0.2s;
         }
         @media (max-width: 1050px){
             display: none;
@@ -129,16 +145,14 @@ width: 100%;
                 cursor: pointer;
                 display: none;
                 width: 40px;
-                height: 30px;
+                height: 40px;
+                margin-left: auto;
                 &:hover, &:focus {
                     transition: 0.3s;
                     transform: rotateZ(20deg);
                 }
                 @media (max-width: 1050px){
                     display: block;
-                }
-                @media (max-width: 750px){
-                    width: 30px;
                 }
             }
 `;
