@@ -25,7 +25,6 @@ export default function Nav() {
             <img id="logo" src={BG} alt="logo"/>
             <nav>
                 <Link to="/">Home</Link>
-                <Link to="/blog">Blog</Link>
                 <Link to="/#skills">Skills</Link>
                 <Link to="/#projects">Projects</Link>
                 <Link to="/#about">About</Link>
@@ -35,7 +34,6 @@ export default function Nav() {
                 <button onClick={closeNav}>&times;</button>
                 <div className="overlayContent" onClick={closeNav}>
                     <Link to="/">Home</Link>
-                    <Link to="/blog">Blog</Link>
                     <Link to="/#skills">Skills</Link>
                     <Link to="/#projects">Projects</Link>
                     <Link to="/#about">About</Link>
@@ -85,6 +83,7 @@ width: 100%;
         border: 1px solid #0f4d92;
         color: white;
         border-radius: 8px;
+        font-size: 20px;
         &:hover {
             background: white;
             color: #0f4d92;
