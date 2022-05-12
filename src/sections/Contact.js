@@ -24,11 +24,11 @@ export default function Contact() {
                     </article>
                     <article>
                         <img src={Git} alt="" />
-                        <a href="https://github.com/GibbyCodes" target="_blank" rel="noreferrer">GibbyCodes</a>
+                        <a href="https://github.com/GibbyBreaksTech" target="_blank" rel="noreferrer">GibbyBreaksTech</a>
                     </article>
                     <article>
                         <img src={Twitter} alt="" />
-                        <a href="https://twitter.com/GibbyCodes" target="_blank" rel="noreferrer">@GibbyCodes</a>
+                        <a href="https://twitter.com/GibbyBreaksTech" target="_blank" rel="noreferrer">@GibbyBreaksTech</a>
                     </article>
                     <article>
                         <img src={Linkedin} alt="" />
