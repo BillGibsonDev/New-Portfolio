@@ -35,7 +35,7 @@ export default function Skills() {
                 </div>
                 <div className="icon-wrapper">
                     <img src={SASS} alt="" />
-                    <h6>SASS</h6>
+                    <h6>SASS / SCSS</h6>
                 </div>
                 <div className="icon-wrapper">
                     <img src={JS} alt="" />
@@ -48,41 +48,6 @@ export default function Skills() {
                 <div className="icon-wrapper">
                     <img src={Github} alt="" />
                     <h6>Github</h6>
-                </div>
-                <div className="icon-wrapper">
-                    <img src={API} alt="" />
-                    <h6>APIs</h6>
-                </div>
-            </div>
-            <h2 id="familiar">Familiar With</h2>
-            <div className="icon-container">
-                <div className="icon-wrapper">
-                    <img src={UIUX} alt="" />
-                    <h6>UI / UX Design</h6>
-                </div>
-                <div className="icon-wrapper">
-                    <img src={Figma} alt="" />
-                    <h6>Figma</h6>
-                </div>
-                <div className="icon-wrapper">
-                    <img src={PS} alt="" />
-                    <h6>Photoshop</h6>
-                </div>
-                <div className="icon-wrapper">
-                    <img src={Shopify} alt="" />
-                    <h6>Shopify</h6>
-                </div>
-                <div className="icon-wrapper">
-                    <img src={NodeIcon} alt="" />
-                    <h6>Node.js / Express.js</h6>
-                </div>
-                <div className="icon-wrapper">
-                    <img src={MongoDB} alt="" />
-                    <h6>MongoDb</h6>
-                </div>
-                <div className="icon-wrapper">
-                    <img src={Redux} alt="" />
-                    <h6>Redux</h6>
                 </div>
             </div>
         </StyledSkills>
