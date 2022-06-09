@@ -9,16 +9,7 @@ import HTML from '../images/html-5.png';
 import CSS from '../images/css.png';
 import JS from '../images/jsIcon.png';
 import SASS from '../images/sassIcon.png';
-import API from '../images/api-icon.png'
 
-// familiar images
-import Shopify from "../images/shopifyIcon.png";
-import MongoDB from "../images/mongodb.png";
-import Redux from "../images/redux-logo.png";
-import NodeIcon from "../images/node-js.png";
-import UIUX from '../images/ui-ux.png';
-import Figma from '../images/figmaIcon.png';
-import PS from '../images/psIcon.png';
 
 export default function Skills() {
     return (
