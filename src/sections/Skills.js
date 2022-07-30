@@ -1,4 +1,3 @@
-
 // styled
 import styled from "styled-components";
 
@@ -9,7 +8,6 @@ import HTML from '../images/html-5.png';
 import CSS from '../images/css.png';
 import JS from '../images/jsIcon.png';
 import SASS from '../images/sassIcon.png';
-
 
 export default function Skills() {
     return (
@@ -57,9 +55,6 @@ margin-bottom: 25%;
         width: 50%;
         border-bottom: 2px solid #0f4d92;
         margin-bottom: 10px;
-    }
-    #familiar {
-        margin-top: 2em;
     }
     .icon-container{
         display: grid;

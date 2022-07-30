@@ -1,4 +1,3 @@
-
 // real deal fit
 import RDF from './projectImages/RDF.jpg'
 import RDF1 from './projectImages/RDF1.png'
@@ -16,7 +15,6 @@ import Swatter3 from './projectImages/Swatter3.png';
 import Swatter4 from './projectImages/Swatter4.png';
 import Swatter5 from './projectImages/Swatter5.png';
 import Swatter6 from './projectImages/Swatter6.png';
-import Swatter7 from './projectImages/Swatter7.png';
 
 // free the games
 import Free from './projectImages/FTG.png';
@@ -40,7 +38,6 @@ import V3 from './projectImages/VN3.png';
 import V4 from './projectImages/VN4.png';
 import V5 from './projectImages/VN5.png';
 
-
 export const ProjectList = [
     {
         id: "1",
@@ -56,11 +53,11 @@ export const ProjectList = [
     },
     {
         id: "2",
-        title:"Swatter - Bug Tracker - Full Stack",
+        title:"Swatter - Project Management - Full Stack",
         linkTitle:"Swatter-Bug-Tracker",
         thumbnail: SwatterLogo,
-        images: [Swatter1, Swatter2, Swatter3, Swatter4, Swatter5, Swatter6, Swatter7 ],
-        paragraph: "Swatter is a bug tracking and workflow web app I created using the MERN Stack (Mongodb, Express, React, Node). This web app is designed to organize projects with their bugs onto a webpage and allow you to create, read, update and delete them as you wish. Along with bugs you can communicate with collaborators using a comment section for each project. All of this is wrapped up with a custom login system to prevent mishandling of projects and bugs.",
+        images: [ Swatter1, Swatter2, Swatter3, Swatter4, Swatter5, Swatter6 ],
+        paragraph: "Swatter is a project management and workflow web app I created using the MERN Stack (Mongodb, Express, React, Node). This web app is designed to organize projects with their bugs onto a webpage and allow you to create, read, update and delete them as you wish. Swatter allows users to organize bugs into a sprint or workflow to help achieve goals.  Along with bugs and sprints you can communicate with collaborators using a comment section for each project and bug. All of this is wrapped up with a custom login system to prevent mishandling of projects and bugs.",
         websiteLink: "https://hardcore-bardeen-da4ef7.netlify.app/LoginPage",
         githubLink: "https://github.com/DevGibby/Swatter-Client",
         build: "JavaScript, React, MongoDB, Express, CSS and Node",
