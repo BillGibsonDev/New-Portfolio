@@ -20,7 +20,7 @@ export default function FilteredPage() {
   const [ posts, setPosts ] = useState([]);
 
   useEffect(() => {
-    function handlePosts(){
+    const handlePosts = () => {
       axios.get(`${process.env.REACT_APP_GET_POSTS_URL}`)
       .then((response => {
         setPosts(response.data)
@@ -44,7 +44,7 @@ export default function FilteredPage() {
   // because the filter links send you to a new page this snippet uses the params of tag
   // to select and add the active class
   useEffect(() => {
-    function handleActive(){
+    const handleActive = () => {
       let activeTag = document.getElementById(`${tag}`)
       activeTag.className += " active";
     }
@@ -57,11 +57,12 @@ export default function FilteredPage() {
         <BackgroundImage />
         <Filter tag={tag} />
         { 
-          posts.filter(post => post.tag === `${tag}`).length === 0 ? (
-              <div className="placeholder">
-                  <h2>Sorry, No articles found for {tag}</h2>    
-              </div>
-          ): (
+          posts.filter(post => post.tag === `${tag}`).length === 0 
+          ? 
+            <div className="placeholder">
+                <h2>Sorry, No articles found for {tag}</h2>    
+            </div>
+          : 
             <>
               {
                 posts.filter(post => post.tag === `${tag}`).map((post, key) =>{
@@ -79,7 +80,6 @@ export default function FilteredPage() {
                 })
               }
             </>
-          )
         }
       </StyledBlog>
     </StyledBlogPage>

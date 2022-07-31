@@ -1,15 +1,15 @@
-
 // styled
 import styled from "styled-components";
+import * as pallette from '../styled/ThemeVariables';
 
 // form
 import ContactForm from "../components/ContactForm";
 
 // images
-import Email from '../images/emailYaleBlue.png';
-import Git from '../images/githubYaleBlue.png';
-import Twitter from '../images/twitterYaleBlue.png';
-import Linkedin from '../images/linkedinYaleBlue.png';
+import Email from '../images/icons/email1774dd.png';
+import Git from '../images/icons/github1774dd.png';
+import Twitter from '../images/icons/twitter1774dd.png';
+import Linkedin from '../images/icons/linkedin1774dd.png';
 
 export default function Contact() {
     return (
@@ -50,9 +50,9 @@ margin: 20vh 0;
 flex-direction: column;
     h2 {
         font-size: 3em;
-        color: #0f4d92;
+        color: ${pallette.accentColor};
         width: 50%;
-        border-bottom: 2px solid #0f4d92;
+        border-bottom: 2px solid ${pallette.accentColor};
     }
     .contact-wrapper{
         display: flex;
@@ -79,7 +79,7 @@ flex-direction: column;
                     font-size: 1.5em;
                     font-weight: 700;
                     &:hover{
-                        color: #0f4d92;
+                        color: ${pallette.accentColor};
                     }
                 }
                 a {

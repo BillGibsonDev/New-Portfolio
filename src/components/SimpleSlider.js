@@ -15,13 +15,13 @@ export default function SimpleSlider({images}) {
   return (
     <Slider {...settings}>
       {
-          images.map((image, key) =>{
-              return(
-                <StyledWrapper key={key}>
-                  <img key={key} src={image} alt="" />
-                </StyledWrapper>
-              )
-          })
+        images.map((image, key) =>{
+          return(
+            <StyledWrapper key={key}>
+              <img key={key} src={image} alt="" />
+            </StyledWrapper>
+          )
+        })
       }
     </Slider>
   );

@@ -1,6 +1,6 @@
-
 // styled
-import styled from "styled-components"
+import styled from "styled-components";
+import * as pallette from '../styled/ThemeVariables.js';
 
 export default function About() {
     return (
@@ -25,9 +25,9 @@ margin: 5em auto;
     }
     h2 {
         font-size: 3em;
-        color: #0f4d92;
+        color: ${pallette.accentColor};
         width: 50%;
-        border-bottom: 2px solid #0f4d92;
+        border-bottom: 2px solid ${pallette.accentColor};
         margin-bottom: 20px;
     }
     p {

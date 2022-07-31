@@ -1,13 +1,14 @@
 // styled
 import styled from "styled-components";
+import * as pallette from '../styled/ThemeVariables.js';
 
 // skills images
-import Github from '../images/githubWhiteIcon.png';
-import ReactIcon from '../images/reactIcon.png';
-import HTML from '../images/html-5.png';
-import CSS from '../images/css.png';
-import JS from '../images/jsIcon.png';
-import SASS from '../images/sassIcon.png';
+import Github from '../images/skills-icons/githubWhiteIcon.png';
+import ReactIcon from '../images/skills-icons/reactIcon.png';
+import HTML from '../images/skills-icons/html-5.png';
+import CSS from '../images/skills-icons/css.png';
+import JS from '../images/skills-icons/jsIcon.png';
+import SASS from '../images/skills-icons/sassIcon.png';
 
 export default function Skills() {
     return (
@@ -51,9 +52,9 @@ flex-direction: column;
 margin-bottom: 25%;
     h2 {
         font-size: 3em;
-        color: #0f4d92;
+        color: ${pallette.accentColor};
         width: 50%;
-        border-bottom: 2px solid #0f4d92;
+        border-bottom: 2px solid ${pallette.accentColor};
         margin-bottom: 10px;
     }
     .icon-container{

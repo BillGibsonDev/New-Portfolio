@@ -28,9 +28,9 @@ margin: 5em 0;
 width: 100%;
 border-radius: 14px;
 position: relative;
+transition: 0.2s;
     &:hover{
         transform: scale(1.02);
-        transition: 0.3s;
     }
     h4 {
         font-size: 1.5em;

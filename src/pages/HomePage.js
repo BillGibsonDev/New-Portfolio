@@ -8,7 +8,6 @@ import Projects from '../sections/Projects';
 // components
 import HomeBackgroundImage from '../components/HomebackgroundImage';
 
-
 export default function HomePage() {
     return (
         <>

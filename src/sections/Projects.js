@@ -8,6 +8,7 @@ import Project from '../components/Project';
 
 // styled
 import styled from "styled-components"
+import * as pallette from '../styled/ThemeVariables.js';
 
 export default function Projects() {
 
@@ -45,9 +46,9 @@ height: 100%;
 margin-bottom: 10%;
     h2 {
         font-size: 2.2em;
-        color: #0f4d92;
+        color: ${pallette.accentColor};
         width: 50%;
-        border-bottom: 2px solid #0f4d92;
+        border-bottom: 2px solid ${pallette.accentColor};
     }
     .project-container{
         display: grid;

@@ -8,6 +8,7 @@ import SimpleSlider from '../components/SimpleSlider.js';
 
 // styled
 import styled from 'styled-components';
+import * as pallette from '../styled/ThemeVariables.js';
 
 //router
 import { useParams } from 'react-router';
@@ -59,15 +60,15 @@ export default function ProjectPage() {
 }
 
 const StyledProject = styled.div`
-min-height: 80vh;
-margin: 5em auto;
-width: 100%;
+    min-height: 80vh;
+    margin: auto;
+    width: 100%;
     .overlay-content {
         position: relative;
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin:  2em auto;
+        margin: 2em auto;
         border-radius: 20px;
         .overlay-wrapper {
             width: 90%;
@@ -77,9 +78,9 @@ width: 100%;
             flex-direction: column;
             h4 {
                 font-size: 4em;
-                color: #0f4d92;
+                color: ${pallette.accentColor};
                 margin-bottom: 1em;
-                border-bottom: 2px solid #0f4d92;
+                border-bottom: 2px solid ${pallette.accentColor};
                 @media (max-width: 750px){
                     font-size: 2em;
                     margin-bottom: 2em;
@@ -114,7 +115,7 @@ width: 100%;
                         display: flex;
                         flex-direction: column;
                         span {
-                            color: #707070;
+                            color: ${pallette.helperGrey};
                         }
                     }
                     .link-wrapper {
@@ -124,7 +125,7 @@ width: 100%;
                             font-size: 2em;
                             font-weight: 700;
                             margin-right: 2em;
-                            color: #0f4d92;
+                            color: ${pallette.accentColor};
                             transition: 0.2s;
                             &:hover{
                                 color: #ffffff;
@@ -143,7 +144,7 @@ width: 100%;
                 flex-direction: column;
                 span {
                     font-weight: 700;
-                    color: #707070;
+                    color: ${pallette.helperGrey};
                 }
             }
             .slider-container {

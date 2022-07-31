@@ -53,7 +53,7 @@ export const ProjectList = [
     },
     {
         id: "2",
-        title:"Swatter - Project Management - Full Stack",
+        title:"Swatter - Project Management - Full Stack App",
         linkTitle:"Swatter-Bug-Tracker",
         thumbnail: SwatterLogo,
         images: [ Swatter1, Swatter2, Swatter3, Swatter4, Swatter5, Swatter6 ],
@@ -89,7 +89,7 @@ export const ProjectList = [
     },
     {
         id: "5",
-        title:"Veritable Fitness - Full Stack",
+        title:"Veritable Fitness - Full Stack App",
         linkTitle:"Veritable-Fitness",
         thumbnail: RDF,
         images: [RDF1, RDF2, RDF3, RDF4, RDF5, RDF6],

@@ -1,13 +1,14 @@
 
 // styled
 import styled from "styled-components"
+import * as pallette from '../styled/ThemeVariables.js';
 
 // images
-import Git from '../images/githubYaleBlue.png';
-import Twitter from '../images/twitterYaleBlue.png';
-import Linkedin from '../images/linkedinYaleBlue.png';
-import Upwork from '../images/upworkIconYaleBlue.png';
-import Fiverr from '../images/fiverrYaleBlue.png';
+import Git from '../images/icons/github1774dd.png';
+import Twitter from '../images/icons/twitter1774dd.png';
+import Linkedin from '../images/icons/linkedin1774dd.png';
+import Upwork from '../images/icons/upwork1774dd.png';
+import Fiverr from '../images/icons/fiverr1774dd.png';
 
 export default function Footer() {
     return (
@@ -26,7 +27,7 @@ export default function Footer() {
 
 const StyledFooter = styled.div`
 height: 100%;
-border-top: 3px solid #0f4d92;
+border-top: 3px solid ${pallette.accentColor};
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -34,7 +35,7 @@ margin: auto;
 width: 100%;
     h2 {
         font-size: 3em;
-        color: #0f4d92;
+        color: ${pallette.accentColor};
     }
     .icon-container {
         display: flex;
@@ -48,11 +49,6 @@ width: 100%;
             margin-right: 10px;
             img {
                 width: 50px;
-                opacity: .7;
-                transition: 0.2s;
-                &:hover{
-                    opacity: 1;
-                }
                 @media (max-width: 750px){
                     width: 35px;
                 }

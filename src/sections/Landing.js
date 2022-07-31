@@ -1,13 +1,13 @@
-
 // styles
 import styled from "styled-components";
+import * as pallette from '../styled/ThemeVariables.js';
 
 // images
-import Git from '../images/githubYaleBlue.png';
-import Twitter from '../images/twitterYaleBlue.png';
-import Linkedin from '../images/linkedinYaleBlue.png';
-import Upwork from '../images/upworkIconYaleBlue.png';
-import Fiverr from '../images/fiverrYaleBlue.png';
+import Git from '../images/icons/github1774dd.png';
+import Twitter from '../images/icons/twitter1774dd.png';
+import Linkedin from '../images/icons/linkedin1774dd.png';
+import Upwork from '../images/icons/upwork1774dd.png';
+import Fiverr from '../images/icons/fiverr1774dd.png';
 
 export default function Landing() {
     return (
@@ -56,7 +56,7 @@ const StyledLanding = styled.div`
     .title-container {
         h1 {
             font-size: 6em;
-            color: #0f4d92;
+            color: ${pallette.accentColor};
             @media (max-width: 750px){
                font-size: 4em;
             }
@@ -76,13 +76,8 @@ const StyledLanding = styled.div`
                     position: relative;
                         img {
                             width: 50px;
-                            opacity: .7;
                             z-index: 1;
                             position: relative;
-                            transition: 0.2s;
-                            &:hover{
-                                opacity: 1;
-                            }
                             @media (max-width: 750px){
                                 width: 35px;
                             }
