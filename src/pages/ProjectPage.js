@@ -42,9 +42,9 @@ export default function ProjectPage() {
                                             <a href={project.websiteLink} target="_blank" rel="noreferrer">Demo</a>
                                             <a href={project.githubLink} target="_blank" rel="noreferrer">Github</a>
                                         </div>
+                                        <p><span>Description: </span>{project.paragraph}</p>
                                     </div>
                                 </div>
-                                <p><span>Description: </span>{project.paragraph}</p>
                                 <div className="slider-container">
                                     <SimpleSlider
                                         images={project.images}
@@ -89,6 +89,7 @@ const StyledProject = styled.div`
             .top-container {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 100px;
                 @media (max-width: 750px){
                     flex-direction: column;
                     justify-content: flex-start;
@@ -132,19 +133,18 @@ const StyledProject = styled.div`
                             }
                         }
                     }
-                }
-            }
-            p {
-                color: #ffffff;
-                font-size: 14px;
-                margin: 10% 0;
-                letter-spacing: 0.5px;
-                line-height: 1.7;
-                display: flex;
-                flex-direction: column;
-                span {
-                    font-weight: 400;
-                    color: ${pallette.helperGrey};
+                    p {
+                        color: #ffffff;
+                        font-size: 14px;
+                        letter-spacing: 0.5px;
+                        line-height: 1.7;
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                            font-weight: 400;
+                            color: ${pallette.helperGrey};
+                        }
+                    }
                 }
             }
             .slider-container {
