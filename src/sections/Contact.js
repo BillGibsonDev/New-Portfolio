@@ -49,7 +49,7 @@ position: relative;
 margin: 20vh 0;
 flex-direction: column;
     h2 {
-        font-size: 3em;
+        font-size: 36xpx;
         color: ${pallette.accentColor};
         width: 50%;
         border-bottom: 2px solid ${pallette.accentColor};
@@ -71,12 +71,12 @@ flex-direction: column;
                 margin: 10px 0;
                 img{
                     margin-right: 10px;
-                    height: 50px;
-                    width: 50px;
+                    height: 40px;
+                    width: 40px;
                 }
                 h6, a {
                     color: white;
-                    font-size: 1.5em;
+                    font-size: 20px;
                     font-weight: 700;
                     &:hover{
                         color: ${pallette.accentColor};

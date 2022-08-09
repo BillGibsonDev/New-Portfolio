@@ -1,10 +1,8 @@
-
 // styled
 import styled from 'styled-components'
 
 // images
 import Background from "../images/blogBackground.jpg";
-
 
 export default function BlogBackgroundImage() {
 

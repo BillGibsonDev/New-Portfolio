@@ -24,7 +24,7 @@ margin: 5em auto;
         height: 60vh;
     }
     h2 {
-        font-size: 3em;
+        font-size: 36px;
         color: ${pallette.accentColor};
         width: 50%;
         border-bottom: 2px solid ${pallette.accentColor};
@@ -32,7 +32,7 @@ margin: 5em auto;
     }
     p {
         color: white;
-        font-size: 1.5em;
+        font-size: 18px;
         line-height: 2;
         letter-spacing: 1px;
     }

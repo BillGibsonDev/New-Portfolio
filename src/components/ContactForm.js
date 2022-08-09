@@ -2,12 +2,15 @@ import { useForm, ValidationError } from '@formspree/react';
 
 // styled
 import styled from 'styled-components';
+import * as pallette from '../styled/ThemeVariables.js';
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("mgerlvjy");
+
   if (state.succeeded) {
       return <p>Thanks for your message!</p>;
   }
+  
   return (
       <StyledForm>
             <h5>Send me a message!</h5>
@@ -57,9 +60,10 @@ margin-right: 10%;
         width: 100%;
     }
 h5 {
-    font-size: 1.5em;
+    font-size: 20px;
     color: white;
     font-weight: 400;
+    border-bottom: 2px solid ${pallette.accentColor};
 }
 form {
     display: flex;
@@ -69,14 +73,16 @@ form {
     margin: 1em auto;
     label {
         color: white;
-        font-size: 1.5em;
+        font-size: 20px;
     }
     input {
         height: 30px;
+        padding: 4px;
     }
     textarea{
         height: 70%;
         margin: 10px 0;
+        padding: 4px;
     }
     button {
         width: 50%;
@@ -84,16 +90,16 @@ form {
         margin: 0 auto;
         border: none;
         border-radius: 6px;
-        font-size: 1.5em;
+        font-size: 16px;
         font-weight: 700;
         letter-spacing: 1px;
-        background: #0f4d92;
+        background: ${pallette.accentColor};
         color: white;
         transition: 0.2s;
         &:hover {
             cursor: pointer;
             background: black;
-            color: #0f4d92;
+            color: ${pallette.accentColor};
         }
     }
 }

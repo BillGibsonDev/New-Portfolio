@@ -4,7 +4,6 @@ import styled from 'styled-components'
 // images
 import Background from "../images/background.jpg";
 
-
 export default function HomeBackgroundImage() {
 
   return (

@@ -77,12 +77,12 @@ const StyledProject = styled.div`
             display: flex;
             flex-direction: column;
             h4 {
-                font-size: 4em;
+                font-size: 36px;
                 color: ${pallette.accentColor};
                 margin-bottom: 1em;
                 border-bottom: 2px solid ${pallette.accentColor};
                 @media (max-width: 750px){
-                    font-size: 2em;
+                    font-size: 24px;
                     margin-bottom: 2em;
                 }
             }
@@ -108,7 +108,7 @@ const StyledProject = styled.div`
                         width: 100%;
                     }
                     h5 {
-                        font-size: 1.5em;
+                        font-size: 16px;
                         font-weight: 400;
                         color: #ffffff;
                         margin: 16px 0;
@@ -122,7 +122,7 @@ const StyledProject = styled.div`
                         display: flex;
                         margin: 12px 0;
                         a {
-                            font-size: 2em;
+                            font-size: 16px;
                             font-weight: 700;
                             margin-right: 2em;
                             color: ${pallette.accentColor};
@@ -136,14 +136,14 @@ const StyledProject = styled.div`
             }
             p {
                 color: #ffffff;
-                font-size: 1.5em;
-                margin: 20px 0 10% 0;
+                font-size: 14px;
+                margin: 10% 0;
                 letter-spacing: 0.5px;
                 line-height: 1.7;
                 display: flex;
                 flex-direction: column;
                 span {
-                    font-weight: 700;
+                    font-weight: 400;
                     color: ${pallette.helperGrey};
                 }
             }

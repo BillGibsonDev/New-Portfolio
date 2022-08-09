@@ -34,7 +34,7 @@ flex-direction: column;
 margin: auto;
 width: 100%;
     h2 {
-        font-size: 3em;
+        font-size: 36px;
         color: ${pallette.accentColor};
     }
     .icon-container {
@@ -48,7 +48,7 @@ width: 100%;
         a {
             margin-right: 10px;
             img {
-                width: 50px;
+                width: 40px;
                 @media (max-width: 750px){
                     width: 35px;
                 }

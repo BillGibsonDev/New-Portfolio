@@ -4,7 +4,6 @@ import styled from 'styled-components';
 // router
 import { Link } from 'react-router-dom';
 
-
 export default function Project({
     id, 
     title, 
@@ -23,12 +22,12 @@ export default function Project({
 }
 
 const StyledProject = styled.div`
-height: 40vh;
-margin: 5em 0;
-width: 100%;
-border-radius: 14px;
-position: relative;
-transition: 0.2s;
+    height: 40vh;
+    margin: 5em 0;
+    width: 100%;
+    border-radius: 14px;
+    position: relative;
+    transition: 0.2s;
     &:hover{
         transform: scale(1.02);
     }

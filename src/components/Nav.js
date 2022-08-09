@@ -70,6 +70,7 @@ width: 100%;
             &:hover {
                 text-decoration: underline;
                 text-underline-position: under;
+                color: ${pallette.accentColor};
             }
         }
         @media (max-width: 1050px){
@@ -79,15 +80,15 @@ width: 100%;
     #nav-button {
         margin-left: auto;
         padding: 10px 20px;
-        background: #0f4d92;
-        border: 1px solid #0f4d92;
+        background: ${pallette.accentColor};
+        border: 1px solid ${pallette.accentColor};
         color: white;
         border-radius: 8px;
         font-size: 20px;
         transition: 0.2s;
         &:hover {
             background: white;
-            color: #0f4d92;
+            color: ${pallette.accentColor};
         }
         @media (max-width: 1050px){
             display: none;
@@ -108,7 +109,7 @@ width: 100%;
             top: 20px;
             right: 45px;
             font-size: 60px;
-            color: ${pallette.helperGrey};
+            color: ${pallette.accentColor};
             background: transparent;
             border: none;
             cursor: pointer;

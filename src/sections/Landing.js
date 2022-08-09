@@ -75,7 +75,7 @@ const StyledLanding = styled.div`
                     z-index: 1;
                     position: relative;
                         img {
-                            width: 50px;
+                            width: 40px;
                             z-index: 1;
                             position: relative;
                             @media (max-width: 750px){

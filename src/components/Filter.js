@@ -1,4 +1,3 @@
-
 // styled
 import styled from 'styled-components';
 
@@ -6,7 +5,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export default function Filter() {
-
 
   let buttons = document.getElementsByClassName("filter");
 
