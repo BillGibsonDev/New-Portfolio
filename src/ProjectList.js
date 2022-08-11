@@ -40,18 +40,6 @@ import V5 from './projectImages/VN5.png';
 
 export const ProjectList = [
     {
-        id: "1",
-        title:"Via Napoli - React / Redux Website",
-        linkTitle:"Via-Napoli",
-        thumbnail: V1,
-        images: [V1, V2, V3, V4, V5 ],
-        paragraph: "The Via Napoli website is built using CSS, React, Redux and a custom database I created for this project. This website allows users to “order” from a pizzeria, add items with specific quantities to the order using Redux and view them on a separate order page.  Each item has its own page dynamically generated for that specific item that gives more information about the item.",
-        websiteLink: "https://zealous-northcutt-991377.netlify.app/",
-        githubLink: "https://github.com/DevGibby/React-Redux-Menu",
-        build: "JavaScript, CSS, React, Redux and a custom database",
-        npm: "Styled Components, Axios, React-Router-Dom, React-Redux, Redux-Thunk",
-    },
-    {
         id: "2",
         title:"Swatter - Project Management - Full Stack App",
         linkTitle:"Swatter-Bug-Tracker",
@@ -62,6 +50,18 @@ export const ProjectList = [
         githubLink: "https://github.com/DevGibby/Swatter-Client",
         build: "JavaScript, React, MongoDB, Express, CSS and Node",
         npm: "Styled Components, Axios, React-Router-Dom, Bcrypt, Mongoose, React-Slick, Heroku and JWT",
+    },
+    {
+        id: "1",
+        title:"Via Napoli - React / Redux Website",
+        linkTitle:"Via-Napoli",
+        thumbnail: V1,
+        images: [V1, V2, V3, V4, V5 ],
+        paragraph: "The Via Napoli website is built using CSS, React, Redux and a custom database I created for this project. This website allows users to “order” from a pizzeria, add items with specific quantities to the order using Redux and view them on a separate order page.  Each item has its own page dynamically generated for that specific item that gives more information about the item.",
+        websiteLink: "https://zealous-northcutt-991377.netlify.app/",
+        githubLink: "https://github.com/DevGibby/React-Redux-Menu",
+        build: "JavaScript, CSS, React, Redux and a custom database",
+        npm: "Styled Components, Axios, React-Router-Dom, React-Redux, Redux-Thunk",
     },
     {
         id: "3",
