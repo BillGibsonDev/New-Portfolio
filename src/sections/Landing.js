@@ -28,7 +28,7 @@ export default function Landing() {
     )
 }
 
-const StyledLanding = styled.div`
+const StyledLanding = styled.section`
     height: 90vh;
     width: 100%;
     margin: auto;

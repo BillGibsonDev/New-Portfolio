@@ -40,7 +40,7 @@ export default function Contact() {
     )
 }
 
-const StyledContact = styled.div`
+const StyledContact = styled.section`
 min-height: 70vh;
 margin-top: 10%;
 display: flex;

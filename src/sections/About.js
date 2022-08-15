@@ -14,7 +14,7 @@ export default function About() {
     )
 }
 
-const StyledAbout = styled.div`
+const StyledAbout = styled.section`
 height: 60vh;
 display: flex;
 justify-content: center;
