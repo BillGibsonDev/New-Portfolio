@@ -1,5 +1,6 @@
 // styled
 import styled from 'styled-components';
+import * as pallette from '../styled/ThemeVariables.js';
 
 // router
 import { Link } from 'react-router-dom';
@@ -72,8 +73,9 @@ const StyledPost = styled.div`
       }
     }
     h4 {
-      font-size: 20px;
-      color: #bbbbbb;
+      font-size: 16px;
+      font-weight: 400;
+      color: ${pallette.helperGrey};
       @media(max-width: 920px){
         margin-left: 10px;
       }

@@ -27,6 +27,7 @@ export default function Nav() {
                 <Link to="/#skills">Skills</Link>
                 <Link to="/#projects">Projects</Link>
                 <Link to="/#about">About</Link>
+                <Link to="/blog">Blog</Link>
             </nav>
             <Link id="nav-button" to="/#contact">Contact</Link>
             <div id="myNav" className="overlay">
@@ -36,6 +37,7 @@ export default function Nav() {
                     <Link to="/#skills">Skills</Link>
                     <Link to="/#projects">Projects</Link>
                     <Link to="/#about">About</Link>
+                    <Link to="/blog">Blog</Link>
                     <Link to="/#contact">Contact</Link>
                 </div>
             </div>

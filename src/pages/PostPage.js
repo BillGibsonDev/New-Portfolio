@@ -14,7 +14,7 @@ export default function PostPage() {
   const [ post, setPost ] = useState([]);
 
   useEffect(() => {
-    function handlePost(){
+    const handlePost = () => {
       axios.get(`${process.env.REACT_APP_GET_POST_URL}/${postId}`)
       .then((response => {
         setPost(response.data)
@@ -26,9 +26,9 @@ export default function PostPage() {
   return (
     <StyledPost>
       {
-        post.length === 0 ? (
-          <div className="placeholder"></div>
-        ): (
+        post.length === 0 
+        ? <div className="placeholder"></div>
+        : 
           <div className="post-wrapper">
             <h1>{post.title}</h1>
             <h2>{post.date}</h2>
@@ -46,7 +46,6 @@ export default function PostPage() {
               })
             }  
           </div>
-        )
       }
     </StyledPost>
   )
@@ -66,6 +65,8 @@ const StyledPost = styled.div`
     }
     h2 {
       color: #bbbbbb;
+      font-size: 16px;
+      font-weight: 400;
     }
     img {
       max-width: 800px;

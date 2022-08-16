@@ -1,4 +1,3 @@
-
 // styles
 import GlobalStyles from "./GlobalStyles";
 
