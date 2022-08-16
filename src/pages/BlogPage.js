@@ -40,9 +40,9 @@ export default function BlogPage() {
         <BackgroundImage />
         <Filter />
         { 
-          posts.length === [] ? (
-            <h1>Posts Coming Soon!</h1>
-          ): (
+          posts.length === [] 
+          ? <h1>Posts Coming Soon!</h1>
+          : 
             <>
               {
                 posts.map((post, key) =>{
@@ -62,7 +62,6 @@ export default function BlogPage() {
                 })
               }
             </>
-          )
         }
       </StyledBlog>
     </StyledBlogPage>

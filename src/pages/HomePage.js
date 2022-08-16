@@ -13,8 +13,8 @@ export default function HomePage() {
         <>
             <HomeBackgroundImage/>
             <Landing />
-            <Skills />
             <Projects />
+            <Skills />
             <About />
             <Contact />
         </>

@@ -41,7 +41,7 @@ export default function Projects() {
     )
 }
 
-const StyledProject = styled.div`
+const StyledProject = styled.section`
 height: 100%;
 margin-bottom: 10%;
     h2 {

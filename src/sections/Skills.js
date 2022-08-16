@@ -44,7 +44,7 @@ export default function Skills() {
     )
 }
 
-const StyledSkills = styled.div`
+const StyledSkills = styled.section`
 min-height: 50vh;
 display: flex;
 justify-content: center;
