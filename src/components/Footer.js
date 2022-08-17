@@ -18,7 +18,7 @@ export default function Footer() {
                     <a href="https://github.com/GibbyBreaksTech" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
                     <a href="https://twitter.com/GibbyBreaksTech" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
                     <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="" /></a>
-                    <a href="https://www.fiverr.com/gibby_designs?up_rollout=true" target="_blank" rel="noreferrer"><img src={Fiverr} alt="" /></a>
+                    <a href="https://www.fiverr.com/gibby_designs" target="_blank" rel="noreferrer"><img src={Fiverr} alt="" /></a>
                     <a href="https://www.upwork.com/freelancers/~01c291154f7c452996" target="_blank" rel="noreferrer"><img src={Upwork} alt="" /></a>
                 </div>
         </StyledFooter>

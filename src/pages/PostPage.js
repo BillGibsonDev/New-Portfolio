@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // styled
-import styled from 'styled-components'
+import styled from 'styled-components';
+import * as pallette from '../styled/ThemeVariables.js';
 
 // router
 import { useParams } from 'react-router-dom';
@@ -14,7 +15,7 @@ export default function PostPage() {
   const [ post, setPost ] = useState([]);
 
   useEffect(() => {
-    function handlePost(){
+    const handlePost = () => {
       axios.get(`${process.env.REACT_APP_GET_POST_URL}/${postId}`)
       .then((response => {
         setPost(response.data)
@@ -26,9 +27,9 @@ export default function PostPage() {
   return (
     <StyledPost>
       {
-        post.length === 0 ? (
-          <div className="placeholder"></div>
-        ): (
+        post.length === 0 
+        ? <div className="placeholder"></div>
+        : 
           <div className="post-wrapper">
             <h1>{post.title}</h1>
             <h2>{post.date}</h2>
@@ -37,16 +38,31 @@ export default function PostPage() {
               post.sections.map((section, key) =>{
                 return(
                   <div className="section-container" key={key}>
-                    <h4>{section.title}</h4>
-                    <img src={section.image} alt="" />
-                    <p>{section.paragraph}</p>
-                    <a href={section.link}>{section.link}</a>  
+                    {
+                      section.title === ""
+                      ? <></>
+                      : <h4>{section.title}</h4>
+                    }
+                    {
+                      section.image === ""
+                      ? <></>
+                      : <img src={section.image} alt="" />
+                    }
+                    {
+                      section.paragraph === ""
+                      ? <></>
+                      : <p>{section.paragraph}</p>
+                    }
+                    {
+                      section.link === ""
+                      ? <></>
+                      : <a href={section.link}>{section.link}</a> 
+                    } 
                   </div>
                 )
               })
             }  
           </div>
-        )
       }
     </StyledPost>
   )
@@ -66,14 +82,22 @@ const StyledPost = styled.div`
     }
     h2 {
       color: #bbbbbb;
+      font-size: 16px;
+      font-weight: 400;
     }
     img {
       max-width: 800px;
       width: 70%;
     }
     .section-container {
-      p {
+      margin: 20px 0;
+      h4 {
+        color: ${pallette.accentColor};
         font-size: 20px;
+        margin-top: 60px;
+      }
+      p {
+        font-size: 16px;
         color: white;
       }
     }
