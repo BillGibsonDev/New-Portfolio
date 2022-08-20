@@ -1,12 +1,3 @@
-// real deal fit
-import RDF from './projectImages/RDF.jpg'
-import RDF1 from './projectImages/RDF1.png'
-import RDF2 from './projectImages/RDF2.png'
-import RDF3 from './projectImages/RDF3.png'
-import RDF4 from './projectImages/RDF4.png'
-import RDF5 from './projectImages/RDF5.png'
-import RDF6 from './projectImages/RDF6.png'
-
 // swatter 
 import SwatterLogo from './projectImages/SwatterLogo.png';
 import Swatter1 from './projectImages/Swatter1.png';
@@ -15,13 +6,6 @@ import Swatter3 from './projectImages/Swatter3.png';
 import Swatter4 from './projectImages/Swatter4.png';
 import Swatter5 from './projectImages/Swatter5.png';
 import Swatter6 from './projectImages/Swatter6.png';
-
-// free the games
-import Free from './projectImages/FTG.png';
-import Free1 from './projectImages/FTG1.png';
-import Free2 from './projectImages/FTG2.png';
-import Free3 from './projectImages/FTG3.png';
-import Free4 from './projectImages/FTG4.png';
 
 // Branded.
 import B1 from './projectImages/b1.png';
@@ -38,7 +22,22 @@ import V3 from './projectImages/VN3.png';
 import V4 from './projectImages/VN4.png';
 import V5 from './projectImages/VN5.png';
 
+// Tech Blog
+import TB1 from './projectImages/tb.png';
+
 export const ProjectList = [
+    {
+        id: "5",
+        title:"Tech Blog - Full Stack App",
+        linkTitle:"Tech-Blog",
+        thumbnail: TB1,
+        images: [TB1],
+        paragraph: "Tech Blog is a full stack application created to allow users to make articles for technology languages and more. This web app uses a custom login system for creators to make articles and post them to the website by sending them to a database. Each article and creator has a dedicated page that is generated dynamically. The creators page acts as a profile for the creator, displaying their social media and public information as well as articles written by them.",
+        websiteLink: "https://dainty-trifle-b85068.netlify.app/",
+        githubLink:"https://github.com/GibbyBreaksTech/MERN-Tech-Blog",
+        build:"CSS, JavaScript, React, Redux, MongoDB, Express and Node",
+        npm: "Styled Components, Axios and React-Router-Dom",
+    },
     {
         id: "2",
         title:"Swatter - Project Management - Full Stack App",
@@ -74,29 +73,5 @@ export const ProjectList = [
         githubLink: "https://github.com/DevGibby/New-React-Marketplace",
         build: "JavaScript, React, CSS, Free-Store-API and Redux",
         npm: "Styled Components, Axios, React-Router-Dom, React-Redux, Redux-Thunk",
-    },
-    {
-        id: "4",
-        title:"Free The Games - React Website",
-        linkTitle:"Free-The-Games",
-        thumbnail: Free,
-        images: [Free4, Free1, Free3, Free2],
-        paragraph: "Free The Games is a website built with React using the Free to Game API. I included a few animations with the Framer Motion Library. Each game is created on the page from the API and provides a link to a dynamically added page for that specific game. The dynamically created page will provide users with that game's information and links.",
-        websiteLink: "https://unruffled-torvalds-0f1306.netlify.app/",
-        githubLink:"https://github.com/DevGibby/React-Free-Games-Api",
-        build:"CSS, JavaScript and React",
-        npm: "Axios, Styled Components, React-Slick, React-Router-Dom and Framer Motion",
-    },
-    {
-        id: "5",
-        title:"Veritable Fitness - Full Stack App",
-        linkTitle:"Veritable-Fitness",
-        thumbnail: RDF,
-        images: [RDF1, RDF2, RDF3, RDF4, RDF5, RDF6],
-        paragraph: "The Veritable Fitness project started out as an example website I was using to learn the Shopify platform and evolved into an entire ecosystem. I have always been involved in sports and fitness. This is where I began to build the Real Deal Fitness brand. I developed a standalone blog website using React, MongoDb, Express and Node.js. This is a live website to help build my brand using fitness articles, news and more.",
-        websiteLink: "https://www.trdfit.com/",
-        githubLink:"https://github.com/DevGibby/New-Fit-Blog",
-        build:"JavaScript, React, Redux, MongoDB, Express, Node and Shopify",
-        npm: "Styled Components, Axios and React-Router-Dom",
     }, 
 ]
