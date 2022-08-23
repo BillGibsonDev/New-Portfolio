@@ -45,17 +45,17 @@ export default function Skills() {
 }
 
 const StyledSkills = styled.section`
-min-height: 50vh;
-display: flex;
-justify-content: center;
-flex-direction: column;
-margin-bottom: 25%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25%;
     h2 {
-        font-size: 3em;
+        font-size: ${pallette.sectionTitleSize};
         color: ${pallette.accentColor};
-        width: 50%;
+        width: 60%;
         border-bottom: 2px solid ${pallette.accentColor};
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .icon-container{
         display: grid;

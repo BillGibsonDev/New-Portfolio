@@ -14,8 +14,8 @@ html {
     overflow-x: hidden;
     background-color: #000000;
     @media (max-width: 1050px){
-        font-size: 70%;
         width: 90%;
+        font-size: 70%;
     }
 }
 

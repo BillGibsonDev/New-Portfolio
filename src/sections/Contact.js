@@ -49,15 +49,16 @@ position: relative;
 margin: 20vh 0;
 flex-direction: column;
     h2 {
-        font-size: 36xpx;
+        font-size: ${pallette.sectionTitleSize};
         color: ${pallette.accentColor};
-        width: 50%;
+        width: 60%;
         border-bottom: 2px solid ${pallette.accentColor};
+        margin-bottom: 20px;
     }
     .contact-wrapper{
         display: flex;
         align-items: center;
-        @media (max-width: 1250px){
+        @media (max-width: 1000px){
             flex-direction: column;
             align-items: flex-start;
         }
@@ -65,6 +66,9 @@ flex-direction: column;
             display: flex;
             width: 50%;
             flex-direction: column;
+            @media (max-width: 850px){
+                width: 100%;
+            }
             article {
                 display: flex;
                 align-items: center;

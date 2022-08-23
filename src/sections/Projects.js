@@ -42,19 +42,20 @@ export default function Projects() {
 }
 
 const StyledProject = styled.section`
-height: 100%;
-margin-bottom: 10%;
+    height: 100%;
+    margin-bottom: 10%;
     h2 {
-        font-size: 2.2em;
+        font-size: ${pallette.sectionTitleSize};
         color: ${pallette.accentColor};
-        width: 50%;
+        width: 60%;
         border-bottom: 2px solid ${pallette.accentColor};
+        margin-bottom: 20px;
     }
     .project-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2em;
-        grid-row-gap: 2em;
+        column-gap: 20px;
+        row-gap: 20px;
         @media(max-width: 700px){
             grid-template-columns: 1fr;
             grid-row-gap: 1em;

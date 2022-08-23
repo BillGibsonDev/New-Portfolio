@@ -22,12 +22,13 @@ export default function Project({
 }
 
 const StyledProject = styled.div`
-    height: 40vh;
-    margin: 5em 0;
+    height: 400px;
+    max-height: 400px;
     width: 100%;
     border-radius: 14px;
     position: relative;
     transition: 0.2s;
+    margin-bottom: 10px;
     &:hover{
         transform: scale(1.02);
     }
@@ -35,14 +36,11 @@ const StyledProject = styled.div`
         font-size: 1.5em;
         margin: 6px 0;
         color: white;
-        @media (max-width: 500px){
-            font-size: 1.5em;
-        }
     }
     a {
         display: flex;
         width: 100%;
-        height: 100%;
+        height: 90%;
         border-radius: 14px;
         box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.219);
         img {

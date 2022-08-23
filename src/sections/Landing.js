@@ -63,7 +63,7 @@ const StyledLanding = styled.section`
         }
         h3 {
             color: white;
-            font-size: 2em;
+            font-size: ${pallette.sectionTitleSize};
             @media (max-width: 750px){
                font-size: 1.5em;
             }

@@ -15,24 +15,24 @@ export default function About() {
 }
 
 const StyledAbout = styled.section`
-height: 60vh;
-display: flex;
-justify-content: center;
-flex-direction: column;
-margin: 5em auto;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5em auto;
     @media (max-width: 1050px){
         height: 60vh;
     }
     h2 {
-        font-size: 36px;
+        font-size: ${pallette.sectionTitleSize};
         color: ${pallette.accentColor};
-        width: 50%;
+        width: 60%;
         border-bottom: 2px solid ${pallette.accentColor};
         margin-bottom: 20px;
     }
     p {
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 2;
         letter-spacing: 1px;
     }

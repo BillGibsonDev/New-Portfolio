@@ -47,11 +47,11 @@ export default function Nav() {
 }
 
 const StyledNav = styled.div`
-display: grid;
-grid-template-columns: 25% 50% 25%;
-align-items: center;
-height: 10vh;
-width: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
     @media (max-width: 1050px){
         grid-template-columns: 50% 50%;
     }
