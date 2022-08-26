@@ -36,7 +36,7 @@ export const ProjectList = [
         websiteLink: "https://dainty-trifle-b85068.netlify.app/",
         githubLink:"https://github.com/GibbyBreaksTech/MERN-Tech-Blog",
         build:"CSS, JavaScript, React, Redux, MongoDB, Express and Node",
-        npm: "Styled Components, Axios and React-Router-Dom",
+        npm: "Styled Components, Axios, Bcrypt, Marked and React-Router-Dom",
     },
     {
         id: "2",
@@ -48,7 +48,7 @@ export const ProjectList = [
         websiteLink: "https://hardcore-bardeen-da4ef7.netlify.app/LoginPage",
         githubLink: "https://github.com/DevGibby/Swatter-Client",
         build: "JavaScript, React, MongoDB, Express, CSS and Node",
-        npm: "Styled Components, Axios, React-Router-Dom, Bcrypt, Mongoose, React-Slick, Heroku and JWT",
+        npm: "Styled Components, Axios, React-Router-Dom, Bcrypt, Mongoose and React-Slick",
     },
     {
         id: "1",
