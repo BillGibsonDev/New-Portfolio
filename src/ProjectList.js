@@ -33,7 +33,7 @@ export const ProjectList = [
         thumbnail: TB1,
         images: [TB1],
         paragraph: "Tech Blog is a full stack application created to allow users to make articles for technology languages and more. I've recently rebuilt this app with Next.js to imporve social media sharing. This web app uses a custom login system for creators to make articles and post them to the website by sending them to a database. Each article and creator has a dedicated page that is generated dynamically. The creators page acts as a profile for the creator, displaying their social media and public information as well as articles written by them.",
-        websiteLink: "https://next-js-tech-blog-8cgpohyyn-gibbybreakstech.vercel.app/",
+        websiteLink: "https://next-js-tech-blog.vercel.app/",
         githubLink:"https://github.com/GibbyBreaksTech/Next.js-Tech-Blog",
         build:"CSS, JavaScript, React, Next.js, Redux, MongoDB, Express and Node",
         npm: "Styled Components, Axios, Bcrypt, Marked and React-Router-Dom",
