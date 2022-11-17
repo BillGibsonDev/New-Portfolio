@@ -8,7 +8,7 @@ import SimpleSlider from '../components/SimpleSlider.js';
 
 // styled
 import styled from 'styled-components';
-import * as pallette from '../styled/ThemeVariables.js';
+import * as palette from '../styled/ThemeVariables.js';
 
 //router
 import { useParams } from 'react-router';
@@ -78,9 +78,9 @@ const StyledProject = styled.div`
             flex-direction: column;
             h4 {
                 font-size: 36px;
-                color: ${pallette.accentColor};
+                color: ${palette.accentColor};
                 margin-bottom: 1em;
-                border-bottom: 2px solid ${pallette.accentColor};
+                border-bottom: 2px solid ${palette.accentColor};
                 @media (max-width: 750px){
                     font-size: 24px;
                     margin-bottom: 2em;
@@ -116,7 +116,7 @@ const StyledProject = styled.div`
                         display: flex;
                         flex-direction: column;
                         span {
-                            color: ${pallette.helperGrey};
+                            color: ${palette.helperGrey};
                         }
                     }
                     .link-wrapper {
@@ -126,7 +126,7 @@ const StyledProject = styled.div`
                             font-size: 16px;
                             font-weight: 700;
                             margin-right: 2em;
-                            color: ${pallette.accentColor};
+                            color: ${palette.accentColor};
                             transition: 0.2s;
                             &:hover{
                                 color: #ffffff;
@@ -142,7 +142,7 @@ const StyledProject = styled.div`
                         flex-direction: column;
                         span {
                             font-weight: 400;
-                            color: ${pallette.helperGrey};
+                            color: ${palette.helperGrey};
                         }
                     }
                 }

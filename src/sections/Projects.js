@@ -8,7 +8,7 @@ import Project from '../components/Project';
 
 // styled
 import styled from "styled-components"
-import * as pallette from '../styled/ThemeVariables.js';
+import * as palette from '../styled/ThemeVariables.js';
 
 export default function Projects() {
 
@@ -45,10 +45,10 @@ const StyledProject = styled.section`
     height: 100%;
     margin-bottom: 10%;
     h2 {
-        font-size: ${pallette.sectionTitleSize};
-        color: ${pallette.accentColor};
+        font-size: ${palette.sectionTitleSize};
+        color: ${palette.accentColor};
         width: 60%;
-        border-bottom: 2px solid ${pallette.accentColor};
+        border-bottom: 2px solid ${palette.accentColor};
         margin-bottom: 20px;
     }
     .project-container{
@@ -56,6 +56,9 @@ const StyledProject = styled.section`
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
         row-gap: 20px;
+        @media(max-width: 1000px){
+            grid-row-gap: 1em;
+        }
         @media(max-width: 700px){
             grid-template-columns: 1fr;
             grid-row-gap: 1em;

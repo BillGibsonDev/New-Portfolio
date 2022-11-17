@@ -1,6 +1,6 @@
 // styled components
 import styled from "styled-components";
-import * as pallette from '../styled/ThemeVariables.js';
+import * as palette from '../styled/ThemeVariables.js';
 
 export const LandingPages = () => {
   return (

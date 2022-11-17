@@ -1,6 +1,6 @@
 // styled
 import styled from "styled-components";
-import * as pallette from '../styled/ThemeVariables.js';
+import * as palette from '../styled/ThemeVariables.js';
 
 // images
 import Hamburger from '../images/icons/menu1774dd.png';
@@ -24,8 +24,8 @@ export default function Nav() {
             <img id="logo" src={BG} alt="logo"/>
             <nav>
                 <Link to="/">Home</Link>
-                <Link to="/#skills">Skills</Link>
                 <Link to="/#projects">Projects</Link>
+                <Link to="/#skills">Skills</Link>
                 <Link to="/#about">About</Link>
                 <a href="https://nexy-tech-blog.vercel.app/" target="_blank" rel="noreferrer">Blog</a>
             </nav>
@@ -34,8 +34,8 @@ export default function Nav() {
                 <button onClick={closeNav}>&times;</button>
                 <div className="overlayContent" onClick={closeNav}>
                     <Link to="/">Home</Link>
-                    <Link to="/#skills">Skills</Link>
                     <Link to="/#projects">Projects</Link>
+                    <Link to="/#skills">Skills</Link>
                     <Link to="/#about">About</Link>
                     <a href="https://nexy-tech-blog.vercel.app/" target="_blank" rel="noreferrer">Blog</a>
                     <Link to="/#contact">Contact</Link>
@@ -72,7 +72,7 @@ const StyledNav = styled.div`
             &:hover {
                 text-decoration: underline;
                 text-underline-position: under;
-                color: ${pallette.accentColor};
+                color: ${palette.accentColor};
             }
         }
         @media (max-width: 1050px){
@@ -82,15 +82,15 @@ const StyledNav = styled.div`
     #nav-button {
         margin-left: auto;
         padding: 10px 20px;
-        background: ${pallette.accentColor};
-        border: 1px solid ${pallette.accentColor};
+        background: ${palette.accentColor};
+        border: 1px solid ${palette.accentColor};
         color: white;
         border-radius: 8px;
         font-size: 20px;
         transition: 0.2s;
         &:hover {
             background: white;
-            color: ${pallette.accentColor};
+            color: ${palette.accentColor};
         }
         @media (max-width: 1050px){
             display: none;
@@ -111,7 +111,7 @@ const StyledNav = styled.div`
             top: 20px;
             right: 45px;
             font-size: 60px;
-            color: ${pallette.accentColor};
+            color: ${palette.accentColor};
             background: transparent;
             border: none;
             cursor: pointer;

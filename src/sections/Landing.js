@@ -1,13 +1,7 @@
 // styles
 import styled from "styled-components";
-import * as pallette from '../styled/ThemeVariables.js';
+import * as palette from '../styled/ThemeVariables.js';
 
-// images
-import Git from '../images/icons/github1774dd.png';
-import Twitter from '../images/icons/twitter1774dd.png';
-import Linkedin from '../images/icons/linkedin1774dd.png';
-import Upwork from '../images/icons/upwork1774dd.png';
-import Fiverr from '../images/icons/fiverr1774dd.png';
 
 export default function Landing() {
     return (
@@ -16,12 +10,9 @@ export default function Landing() {
                 <h3>Hello, I am</h3>
                 <h1>Bill Gibson</h1>
                 <h3>and I am a Frontend Web Developer.</h3>
-                <div className="icon-container">
-                    <a href="https://github.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
-                    <a href="https://twitter.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
-                    <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="" /></a>
-                    <a href="https://www.fiverr.com/gibby_designs" target="_blank" rel="noreferrer"><img src={Fiverr} alt="" /></a>
-                    <a href="https://www.upwork.com/freelancers/~01c291154f7c452996" target="_blank" rel="noreferrer"><img src={Upwork} alt="" /></a>
+                <div className="button-container">
+                    <a href="#contact" id='contact-btn'>Contact</a>
+                    <a href="#projects">Projects</a>
                 </div>
             </div>
         </StyledLanding>
@@ -35,7 +26,7 @@ const StyledLanding = styled.section`
     display: flex;
     align-items: center;
     @media (max-width: 750px){
-        height: 70vh;
+        height: 100vh;
     }
     .background {
         opacity: .1;
@@ -55,33 +46,44 @@ const StyledLanding = styled.section`
     }
     .title-container {
         h1 {
-            font-size: 6em;
-            color: ${pallette.accentColor};
+            font-size: 4em;
+            color: ${palette.accentColor};
             @media (max-width: 750px){
                font-size: 4em;
             }
         }
         h3 {
             color: white;
-            font-size: ${pallette.sectionTitleSize};
+            font-size: ${palette.sectionTitleSize};
             @media (max-width: 750px){
                font-size: 1.5em;
             }
         }
-        .icon-container {
+        .button-container {
+            display: flex;
             margin-top: 20px;  
                 a {
-                    margin-right: 30px;
-                    z-index: 1;
-                    position: relative;
-                        img {
-                            width: 40px;
-                            z-index: 1;
-                            position: relative;
-                            @media (max-width: 750px){
-                                width: 35px;
-                            }
-                        }
+                    background: ${palette.accentColor};
+                    font-size: 1.5em;
+                    color: white;
+                    padding: 16px 60px;
+                    border-radius: 8px;
+                    transition: .2s;
+                    &:hover {
+                        color: ${palette.accentColor};
+                        background: white;
+                    }
+                    @media (max-width: 750px){
+                        padding: 10px 30px;
+                    }
+                }
+                #contact-btn {
+                    background: none;
+                    border: 2px solid ${palette.accentColor};
+                    margin-right: 20px;
+                    &:hover {
+                        background: white;
+                    }
                 }
             }
     }

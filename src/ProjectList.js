@@ -28,7 +28,7 @@ import TB1 from './projectImages/tb.png';
 export const ProjectList = [
     {
         id: "5",
-        title:"Tech Blog - Full Stack App",
+        title:"Tech Blog",
         linkTitle:"Tech-Blog",
         thumbnail: TB1,
         images: [TB1],
@@ -40,7 +40,7 @@ export const ProjectList = [
     },
     {
         id: "2",
-        title:"Swatter - Project Management - Full Stack App",
+        title:"Swatter - Project Management",
         linkTitle:"Swatter-Bug-Tracker",
         thumbnail: SwatterLogo,
         images: [ Swatter1, Swatter2, Swatter3, Swatter4, Swatter5, Swatter6 ],
@@ -52,7 +52,7 @@ export const ProjectList = [
     },
     {
         id: "1",
-        title:"Via Napoli - React / Redux Website",
+        title:"Via Napoli",
         linkTitle:"Via-Napoli",
         thumbnail: V1,
         images: [V1, V2, V3, V4, V5 ],
@@ -64,7 +64,7 @@ export const ProjectList = [
     },
     {
         id: "3",
-        title:"Branded. - React / Redux Website",
+        title:"Branded.",
         linkTitle:"Branded-React-Redux-Shopping-Cart",
         thumbnail: B1,
         images: [B1, B2, B3, B4, B5, B6 ],

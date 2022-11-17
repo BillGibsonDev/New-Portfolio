@@ -1,6 +1,6 @@
 // styled
 import styled from "styled-components";
-import * as pallette from '../styled/ThemeVariables.js';
+import * as palette from '../styled/ThemeVariables.js';
 
 // skills images
 import Github from '../images/skills-icons/githubWhiteIcon.png';
@@ -49,22 +49,18 @@ const StyledSkills = styled.section`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 25%;
     h2 {
-        font-size: ${pallette.sectionTitleSize};
-        color: ${pallette.accentColor};
+        font-size: ${palette.sectionTitleSize};
+        color: ${palette.accentColor};
         width: 60%;
-        border-bottom: 2px solid ${pallette.accentColor};
+        border-bottom: 2px solid ${palette.accentColor};
         margin-bottom: 20px;
     }
     .icon-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 1em;
         grid-row-gap: 1em;
-        @media (max-width: 1250px){
-            grid-template-columns: 1fr 1fr 1fr;
-        }
         @media (max-width: 850px){
             grid-template-columns: 1fr 1fr;
         }

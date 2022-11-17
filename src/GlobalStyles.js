@@ -9,10 +9,13 @@ const GlobalStyles = createGlobalStyle`
 html {
     margin: auto;
     scroll-behavior: smooth;
-    width: 80%;
+    width: 60%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background-color: #000000;
+    @media (max-width: 1250px){
+        width: 70%;
+    }
     @media (max-width: 1050px){
         width: 90%;
         font-size: 70%;

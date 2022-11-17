@@ -4,4 +4,4 @@ export const helperGrey = "#c9c9c9";
 export const titleColor = "#ffffff";
 
 // font size
-export const sectionTitleSize = "3em";
+export const sectionTitleSize = "1.5em";

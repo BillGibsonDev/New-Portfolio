@@ -1,6 +1,6 @@
 // styled
 import styled from "styled-components";
-import * as pallette from '../styled/ThemeVariables';
+import * as palette from '../styled/ThemeVariables';
 
 // form
 import ContactForm from "../components/ContactForm";
@@ -49,10 +49,10 @@ position: relative;
 margin: 20vh 0;
 flex-direction: column;
     h2 {
-        font-size: ${pallette.sectionTitleSize};
-        color: ${pallette.accentColor};
+        font-size: ${palette.sectionTitleSize};
+        color: ${palette.accentColor};
         width: 60%;
-        border-bottom: 2px solid ${pallette.accentColor};
+        border-bottom: 2px solid ${palette.accentColor};
         margin-bottom: 20px;
     }
     .contact-wrapper{
@@ -83,7 +83,7 @@ flex-direction: column;
                     font-size: 20px;
                     font-weight: 700;
                     &:hover{
-                        color: ${pallette.accentColor};
+                        color: ${palette.accentColor};
                     }
                 }
                 a {

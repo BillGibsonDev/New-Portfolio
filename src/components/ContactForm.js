@@ -2,7 +2,7 @@ import { useForm, ValidationError } from '@formspree/react';
 
 // styled
 import styled from 'styled-components';
-import * as pallette from '../styled/ThemeVariables.js';
+import * as palette from '../styled/ThemeVariables.js';
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("mgerlvjy");
@@ -65,7 +65,7 @@ const StyledForm = styled.div`
         font-size: 20px;
         color: white;
         font-weight: 400;
-        border-bottom: 2px solid ${pallette.accentColor};
+        border-bottom: 2px solid ${palette.accentColor};
         margin-bottom: 20px;
     }
     form {
@@ -97,13 +97,13 @@ const StyledForm = styled.div`
             font-size: 16px;
             font-weight: 700;
             letter-spacing: 1px;
-            background: ${pallette.accentColor};
+            background: ${palette.accentColor};
             color: white;
             transition: 0.2s;
             &:hover {
                 cursor: pointer;
                 background: black;
-                color: ${pallette.accentColor};
+                color: ${palette.accentColor};
             }
         }
     }

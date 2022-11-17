@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // styled
 import styled from 'styled-components';
-import * as pallette from '../styled/ThemeVariables.js';
+import * as palette from '../styled/ThemeVariables.js';
 
 // router
 import { useParams } from 'react-router-dom';
@@ -92,7 +92,7 @@ const StyledPost = styled.div`
     .section-container {
       margin: 20px 0;
       h4 {
-        color: ${pallette.accentColor};
+        color: ${palette.accentColor};
         font-size: 20px;
         margin-top: 60px;
       }
