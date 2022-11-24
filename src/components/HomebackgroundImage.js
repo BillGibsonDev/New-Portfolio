@@ -14,7 +14,7 @@ export default function HomeBackgroundImage() {
 }
 
 const StyledImage = styled.div`
-    opacity: .1;
+    opacity: .2;
     height: 100%;
     width: 100%;
     z-index: -1;
