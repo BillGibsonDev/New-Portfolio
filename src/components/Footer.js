@@ -14,7 +14,7 @@ export default function Footer() {
             <h3>Frontend Web Developer</h3>
             <div className="icon-container">
                 <a href="https://github.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
-                <a href="https://twitter.com/BillGibnsonDev" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
+                <a href="https://twitter.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
                 <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="" /></a>
              </div>
         </StyledFooter>
