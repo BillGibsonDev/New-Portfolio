@@ -23,7 +23,10 @@ import V4 from './projectImages/VN4.png';
 import V5 from './projectImages/VN5.png';
 
 // Tech Blog
-import TB1 from './projectImages/tb.png';
+import TB1 from './projectImages/tb1.png';
+import TB2 from './projectImages/tb2.png';
+import TB3 from './projectImages/tb3.png';
+import TB4 from './projectImages/tb4.png';
 
 export const ProjectList = [
     {
@@ -31,7 +34,7 @@ export const ProjectList = [
         title:"Tech Blog",
         linkTitle:"Tech-Blog",
         thumbnail: TB1,
-        images: [TB1],
+        images: [TB1, TB2, TB3, TB4],
         paragraph: "Tech Blog is a full stack application created to allow users to make articles for technology languages and more. I've recently rebuilt this app with Next.js to imporve social media sharing. This web app uses a custom login system for creators to make articles and post them to the website by sending them to a database. Each article and creator has a dedicated page that is generated dynamically. The creators page acts as a profile for the creator, displaying their social media and public information as well as articles written by them.",
         websiteLink: "https://tech-blogg.netlify.app/",
         githubLink:"https://github.com/billgibsondev/Next.js-Tech-Blog",

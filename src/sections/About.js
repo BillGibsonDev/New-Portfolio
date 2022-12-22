@@ -6,8 +6,8 @@ export default function About() {
     return (
         <StyledAbout id="about">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio! My name is Bill and I am a  SelfTaught Frontend Web Developer. 
-                I started my journey into Web Design in August of 2020 and have not looked back.  I have always had a fascination with
+            <p>Welcome to my portfolio! My name is Bill and I am a Self-Taught Frontend Web Developer. 
+                I started my journey into Web Design in August of 2020 and have not looked back. I have always had a fascination with
                 technology since the glory of the original Nintendo days. I currently looking for opportunities fulfill my dream of 
                 becoming a Web Developer full time.</p>
         </StyledAbout>
