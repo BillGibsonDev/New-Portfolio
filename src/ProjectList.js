@@ -20,7 +20,6 @@ import V1 from './projectImages/VN1.png';
 import V2 from './projectImages/VN2.png';
 import V3 from './projectImages/VN3.png';
 import V4 from './projectImages/VN4.png';
-import V5 from './projectImages/VN5.png';
 
 // Tech Blog
 import TB1 from './projectImages/tb1.png';
@@ -58,7 +57,7 @@ export const ProjectList = [
         title:"Via Napoli",
         linkTitle:"Via-Napoli",
         thumbnail: V1,
-        images: [V1, V2, V3, V4, V5 ],
+        images: [V1, V2, V3, V4],
         paragraph: "The Via Napoli website is built using CSS, React, Redux and a custom database I created for this project. This website allows users to “order” from a pizzeria, add items with specific quantities to the order using Redux and view them on a separate order page.  Each item has its own page dynamically generated for that specific item that gives more information about the item.",
         websiteLink: "https://zealous-northcutt-991377.netlify.app/",
         githubLink: "https://github.com/billgibsondev/React-Redux-Menu",
