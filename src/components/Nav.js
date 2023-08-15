@@ -24,20 +24,20 @@ export default function Nav() {
             <img id="logo" src={BG} alt="logo"/>
             <nav>
                 <Link to="/">Home</Link>
+                <Link to="/#about">About</Link>
                 <Link to="/#projects">Projects</Link>
                 <Link to="/#skills">Skills</Link>
-                <Link to="/#about">About</Link>
-                <a href="https://tech-blogg.netlify.app/" target="_blank" rel="noreferrer">Blog</a>
+                {/* <a href="https://tech-blogg.netlify.app/" target="_blank" rel="noreferrer">Blog</a> */}
+                <Link id="nav-button" to="/#contact">Contact</Link>
             </nav>
-            <Link id="nav-button" to="/#contact">Contact</Link>
             <div id="myNav" className="overlay">
                 <button onClick={closeNav}>&times;</button>
                 <div className="overlayContent" onClick={closeNav}>
                     <Link to="/">Home</Link>
+                    <Link to="/#about">About</Link>
                     <Link to="/#projects">Projects</Link>
                     <Link to="/#skills">Skills</Link>
-                    <Link to="/#about">About</Link>
-                    <a href="https://tech-blogg.netlify.app/" target="_blank" rel="noreferrer">Blog</a>
+                    {/* <a href="https://tech-blogg.netlify.app/" target="_blank" rel="noreferrer">Blog</a> */}
                     <Link to="/#contact">Contact</Link>
                 </div>
             </div>
@@ -47,14 +47,10 @@ export default function Nav() {
 }
 
 const StyledNav = styled.div`
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
+    display: flex;
     align-items: center;
     height: 10vh;
     width: 100%;
-    @media (max-width: 1050px){
-        grid-template-columns: 50% 50%;
-    }
     #logo {
         width: 40px;
         height: 40px;
@@ -63,10 +59,11 @@ const StyledNav = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
-        height: 100%;
+        margin-left: auto;
+        width: 50%;
+        max-width: 400px;
         a {
-            font-size: 20px;
+            font-size: 1em;
             color: white;
             transition: 0.2s;
             &:hover {
@@ -80,17 +77,17 @@ const StyledNav = styled.div`
         }
     }
     #nav-button {
-        margin-left: auto;
-        padding: 10px 20px;
+        padding: 6px 10px;
         background: ${palette.accentColor};
         border: 1px solid ${palette.accentColor};
         color: white;
         border-radius: 8px;
-        font-size: 20px;
+        font-size: 1em;
         transition: 0.2s;
         &:hover {
             background: white;
             color: ${palette.accentColor};
+            text-decoration: none;
         }
         @media (max-width: 1050px){
             display: none;
@@ -109,8 +106,8 @@ const StyledNav = styled.div`
         button {
             position: absolute;
             top: 20px;
-            right: 45px;
-            font-size: 60px;
+            right: 15px;
+            font-size: 3em;
             color: ${palette.accentColor};
             background: transparent;
             border: none;
@@ -134,7 +131,6 @@ const StyledNav = styled.div`
                 color: white;
                 margin: 20px;
                 transition: 0.2s;
-                font-size: 3em; 
                     &:hover, &:focus {
                     color: #f1f1f1;
                     transform: scale(1.05);
@@ -145,8 +141,8 @@ const StyledNav = styled.div`
     #hamburger {
         cursor: pointer;
         display: none;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         transition: 0.2s;
         margin-left: auto;
         &:hover, &:focus {

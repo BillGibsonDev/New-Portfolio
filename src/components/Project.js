@@ -24,11 +24,15 @@ export default function Project({
 const StyledProject = styled.div`
     height: 400px;
     max-height: 400px;
-    width: 100%;
+    max-width: 400px;
+    width: 50%;
     border-radius: 14px;
     position: relative;
     transition: 0.2s;
     margin-bottom: 10px;
+    @media (max-width: 750px){
+        width: 100%;
+    }
     &:hover{
         transform: scale(1.02);
     }
@@ -36,6 +40,7 @@ const StyledProject = styled.div`
         font-size: 1.5em;
         margin: 6px 0;
         color: white;
+        font-weight: 400;
     }
     a {
         display: flex;

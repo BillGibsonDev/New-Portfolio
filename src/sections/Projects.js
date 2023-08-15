@@ -52,16 +52,12 @@ const StyledProject = styled.section`
         margin-bottom: 20px;
     }
     .project-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-        row-gap: 20px;
-        @media(max-width: 1000px){
-            grid-row-gap: 1em;
-        }
-        @media(max-width: 700px){
-            grid-template-columns: 1fr;
-            grid-row-gap: 1em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        @media (max-width: 750px){
+            flex-direction: column;
         }
     }
 `;

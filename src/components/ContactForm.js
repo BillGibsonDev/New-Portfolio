@@ -5,15 +5,15 @@ import styled from 'styled-components';
 import * as palette from '../styled/ThemeVariables.js';
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm("mgerlvjy");
+    const [state, handleSubmit] = useForm("mgerlvjy");
 
-  if (state.succeeded) {
-      return <p style={{color: "white", fontSize: '20px', margin: "20px auto"}}>Thanks for your message!</p>;
-  }
+    if (state.succeeded) {
+        return <p style={{color: "white", fontSize: '20px', margin: "20px auto"}}>Thanks for your message!</p>;
+    }
   
   return (
       <StyledForm>
-            <h5>Send me a message!</h5>
+            <h5>Send a message!</h5>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="email">
                     Email Address
@@ -22,7 +22,7 @@ export default function ContactForm() {
                     id="email"
                     type="email" 
                     name="email"
-                    placeholder='Someone@company.com'
+                    placeholder='Someone@something.com'
                 />
                 <ValidationError 
                     prefix="Email" 
@@ -32,7 +32,7 @@ export default function ContactForm() {
                 <textarea
                     id="message"
                     name="message"
-                    placeholder='Hey Bill, I have an amazing job to offer you!'
+                    placeholder='Hey Bill, your portfolio is super cool!'
                 />
                 <ValidationError 
                     prefix="Message" 
@@ -49,7 +49,7 @@ export default function ContactForm() {
 
 const StyledForm = styled.div`
     height: 40vh;
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background: #353535;
@@ -57,6 +57,7 @@ const StyledForm = styled.div`
     align-items: center;
     border-radius: 12px;
     margin-right: auto;
+    padding: 8px;
     @media (max-width: 1000px){
         width: 100%;
         margin-bottom: 20px;
@@ -76,8 +77,7 @@ const StyledForm = styled.div`
         margin: 0 auto;
         label {
             color: white;
-            font-size: 20px;
-            margin: auto;
+            font-size: 1em;
         }
         input {
             height: 30px;
@@ -89,8 +89,9 @@ const StyledForm = styled.div`
             padding: 4px;
         }
         button {
-            width: 50%;
-            height: 30px;
+            max-width: 80%;
+            width: 200px;
+            height: 60px;
             margin: 0 auto;
             border: none;
             border-radius: 6px;

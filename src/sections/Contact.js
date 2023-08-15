@@ -5,94 +5,37 @@ import * as palette from '../styled/ThemeVariables';
 // form
 import ContactForm from "../components/ContactForm";
 
-// images
-import Email from '../images/icons/email1774dd.png';
-import Git from '../images/icons/github1774dd.png';
-import Twitter from '../images/icons/twitter1774dd.png';
-import Linkedin from '../images/icons/linkedin1774dd.png';
-
 export default function Contact() {
     return (
         <StyledContact id="contact">
             <h2>Contact</h2>
             <div className="contact-wrapper">
                 <ContactForm />
-                <div className="contact-container">
-                    <article>
-                        <img src={Email} alt="" />
-                        <h6>BillGibsonDev@outlook.com</h6>
-                    </article>
-                    <article>
-                        <img src={Git} alt="" />
-                        <a href="https://github.com/BillGibsonDev" target="_blank" rel="noreferrer">BillGibsonDev</a>
-                    </article>
-                    <article>
-                        <img src={Twitter} alt="" />
-                        <a href="https://twitter.com/BillGibsonDev" target="_blank" rel="noreferrer">@BillGibsonDev</a>
-                    </article>
-                    <article>
-                        <img src={Linkedin} alt="" />
-                        <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer">Bill Gibson</a>
-                    </article>
-                </div>
             </div>
         </StyledContact>
     )
 }
 
 const StyledContact = styled.section`
-min-height: 70vh;
-margin-top: 10%;
-display: flex;
-justify-content: center;
-position: relative;
-margin: 20vh 0;
-flex-direction: column;
-    h2 {
-        font-size: ${palette.sectionTitleSize};
-        color: ${palette.accentColor};
-        width: 60%;
-        border-bottom: 2px solid ${palette.accentColor};
-        margin-bottom: 20px;
-    }
-    .contact-wrapper{
-        display: flex;
-        align-items: center;
-        @media (max-width: 1000px){
-            flex-direction: column;
-            align-items: flex-start;
+    min-height: 90vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+        h2 {
+            font-size: ${palette.sectionTitleSize};
+            color: ${palette.accentColor};
+            width: 60%;
+            border-bottom: 2px solid ${palette.accentColor};
+            margin-bottom: 20px;
         }
-        .contact-container{
+        .contact-wrapper{
             display: flex;
-            width: 50%;
-            flex-direction: column;
-            @media (max-width: 850px){
-                width: 100%;
-            }
-            article {
-                display: flex;
-                align-items: center;
-                margin: 10px 0;
-                img{
-                    margin-right: 10px;
-                    height: 40px;
-                    width: 40px;
-                }
-                h6, a {
-                    color: white;
-                    font-size: 20px;
-                    font-weight: 700;
-                    &:hover{
-                        color: ${palette.accentColor};
-                    }
-                }
-                a {
-                    &:hover {
-                        text-decoration: underline;
-                        text-underline-position: under;
-                    }
-                }
+            align-items: center;
+            @media (max-width: 1000px){
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
-    }
 `;

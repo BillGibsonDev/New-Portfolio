@@ -11,7 +11,7 @@ export default function Landing() {
                 <h1>Bill Gibson</h1>
                 <h3>and I am a Frontend Web Developer.</h3>
                 <div className="button-container">
-                    <a href="#contact" id='contact-btn'>Contact</a>
+                    <a href="#about" id='about-btn'>About</a>
                     <a href="#projects">Projects</a>
                 </div>
             </div>
@@ -48,27 +48,26 @@ const StyledLanding = styled.section`
         h1 {
             font-size: 4em;
             color: ${palette.accentColor};
-            @media (max-width: 750px){
-               font-size: 4em;
-            }
         }
         h3 {
             color: white;
             font-size: ${palette.sectionTitleSize};
-            @media (max-width: 750px){
-               font-size: 1.5em;
-            }
+            font-size: 1.5em;
+            font-weight: 400;
         }
         .button-container {
             display: flex;
             margin-top: 20px;  
                 a {
                     background: ${palette.accentColor};
-                    font-size: 1.5em;
+                    font-size: 1.2em;
                     color: white;
-                    padding: 16px 60px;
+                    padding: 8px 24px;
                     border-radius: 8px;
                     transition: .2s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     &:hover {
                         color: ${palette.accentColor};
                         background: white;
@@ -77,7 +76,7 @@ const StyledLanding = styled.section`
                         padding: 10px 30px;
                     }
                 }
-                #contact-btn {
+                #about-btn {
                     background: none;
                     border: 2px solid ${palette.accentColor};
                     margin-right: 20px;

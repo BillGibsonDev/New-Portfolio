@@ -13,9 +13,9 @@ export default function HomePage() {
         <>
             <HomeBackgroundImage/>
             <Landing />
+            <About />
             <Projects />
             <Skills />
-            <About />
             <Contact />
         </>
     )

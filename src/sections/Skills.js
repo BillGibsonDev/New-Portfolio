@@ -77,8 +77,9 @@ const StyledSkills = styled.section`
             }
             h6 {
                 color: white;
-                font-size: 1.5em;
+                font-size: 1.2em;
                 margin-left: 10px;
+                font-weight: 400;
             }
         }
     }

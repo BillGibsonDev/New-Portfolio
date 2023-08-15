@@ -13,10 +13,10 @@ export default function Footer() {
             <h2>Bill Gibson</h2>
             <h3>Frontend Web Developer</h3>
             <div className="icon-container">
-                <a href="https://github.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Git} alt="" /></a>
-                <a href="https://twitter.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Twitter} alt="" /></a>
-                <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="" /></a>
-             </div>
+                <a href="https://github.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Git} alt="Github Link" /></a>
+                <a href="https://twitter.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Twitter} alt="Twitter Link" /></a>
+                <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="Linkedin Link" /></a>
+            </div>
         </StyledFooter>
     )
 }
@@ -36,22 +36,18 @@ width: 100%;
     h3 {
         font-size: 1.2em;
         color: #fff;
+        font-weight: 400;
     }
     .icon-container {
         display: flex;
-        width: 20%;
+        width: 50%;
+        max-width: 120px;
         justify-content: space-between;
         margin: 20px auto;
-        @media (max-width: 750px){
-            width: 50%;
-        }
         a {
             margin-right: 10px;
             img {
-                width: 40px;
-                @media (max-width: 750px){
-                    width: 35px;
-                }
+                width: 30px;
             }
         }
     }

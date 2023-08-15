@@ -6,23 +6,17 @@ export default function About() {
     return (
         <StyledAbout id="about">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio! My name is Bill and I am a Self-Taught Frontend Web Developer. 
-                I started my journey into Web Design in August of 2020 and have not looked back. I have always had a fascination with
-                technology since the glory of the original Nintendo days. I currently looking for opportunities fulfill my dream of 
-                becoming a Web Developer full time.</p>
+            <p>Welcome to my portfolio! My name is Bill and I am a Self-Taught Frontend Web Developer. Currently I am a Volunteer Software Engineer at <a href="https://lait911.com" target="_blank" rel="noreferrer">LAIT911 Fire Corp</a>. At LAIT911 I helped the developer team finish and launch their first mobile application that is available for download on the Apple and Google Play Stores. </p>
         </StyledAbout>
     )
 }
 
 const StyledAbout = styled.section`
-    height: 60vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 2em auto;
-    @media (max-width: 1050px){
-        height: 60vh;
-    }
     h2 {
         font-size: ${palette.sectionTitleSize};
         color: ${palette.accentColor};
@@ -32,8 +26,12 @@ const StyledAbout = styled.section`
     }
     p {
         color: white;
-        font-size: 16px;
+        font-size: 1em;
         line-height: 2;
         letter-spacing: 1px;
+        a {
+            color:  ${palette.accentColor};
+            cursor: pointer;
+        }
     }
 `;
