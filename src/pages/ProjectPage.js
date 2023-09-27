@@ -13,8 +13,11 @@ import * as palette from '../styled/ThemeVariables.js';
 //router
 import { useParams } from 'react-router';
 
+// icons
+import Github from '../images/icons/github1774dd.png';
+import Link from '../images/icons/link1774dd.png';
 
-export default function ProjectPage() {
+export const ProjectPage = () => {
 
     const { id } = useParams();
 
@@ -31,26 +34,23 @@ export default function ProjectPage() {
                 projects.filter(projects => projects.id === `${id}`).map((project, key) => {
                     return (
                         <div className="overlay-content" key={key}>
-                            <div className="overlay-wrapper">
+                            <div className="title-container">
                                 <h4>{project.title}</h4>
-                                <div className="top-container">
-                                    <img id="thumbnail" src={project.thumbnail} alt="" />
-                                    <div className="top-wrapper">
-                                        <h5><span>Languages:</span>{project.build}</h5>
-                                        <h5><span>NPM Packages:</span>{project.npm}</h5>
-                                        <div className="link-wrapper">
-                                            <a href={project.websiteLink} target="_blank" rel="noreferrer">Demo</a>
-                                            <a href={project.githubLink} target="_blank" rel="noreferrer">Github</a>
-                                        </div>
-                                        <p><span>Description: </span>{project.paragraph}</p>
-                                    </div>
-                                </div>
-                                <div className="slider-container">
-                                    <SimpleSlider
-                                        images={project.images}
-                                    />
+                                <div className="link-wrapper">
+                                    <a href={project.websiteLink} target="_blank" rel="noreferrer">
+                                        <img src={Link} alt="" />Demo
+                                    </a>
+                                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                                        <img src={Github} alt="" />Github
+                                    </a>
                                 </div>
                             </div>
+                            <div className="slider-container">
+                                <SimpleSlider images={project.images} />
+                            </div>
+                            <h5><span>Languages</span>{project.build}</h5>
+                            <h5><span>NPM Packages</span>{project.npm}</h5>
+                            <p><span>Description </span>{project.paragraph}</p>
                         </div>
                     )
                 })
@@ -59,109 +59,92 @@ export default function ProjectPage() {
     )
 }
 
-const StyledProject = styled.div`
+const StyledProject = styled.section`
     min-height: 80vh;
     margin: auto;
     width: 100%;
     .overlay-content {
-        position: relative;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 2em auto;
-        border-radius: 20px;
-        .overlay-wrapper {
-            width: 90%;
-            height: 100%;
-            margin: auto;
+        margin: 10px auto;
+        .title-container {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            border-bottom: 2px solid ${palette.accentColor};
+            @media (max-width: 510px){
+                justify-content: center;
+                flex-direction: column;
+            }
             h4 {
-                font-size: 36px;
+                font-size: 1.5em;
                 color: ${palette.accentColor};
-                margin-bottom: 1em;
-                border-bottom: 2px solid ${palette.accentColor};
-                @media (max-width: 750px){
-                    font-size: 24px;
-                    margin-bottom: 2em;
-                }
             }
-            .top-container {
+            .link-wrapper {
                 display: flex;
-                justify-content: space-between;
-                margin-bottom: 100px;
-                @media (max-width: 750px){
-                    flex-direction: column;
-                    justify-content: flex-start;
+                justify-content: space-around;
+                width: auto;
+                @media (max-width: 510px){
+                   margin: 8px 0;
                 }
-                #thumbnail {
-                    width: 45%;
-                    border-radius: 8px;
-                    max-height: 400px;
-                    object-fit: cover;
-                    @media (max-width: 750px){
-                        width: 100%;
+                a {
+                    font-size: 1em;
+                    font-weight: 700;
+                    color: white;
+                    transition: 0.2s;
+                    display: flex;
+                    align-items: center;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    &:hover{
+                        color: black;
+                        background: #ffffff;
                     }
-                }
-                .top-wrapper {
-                    width: 50%;
-                    @media (max-width: 750px){
-                        width: 100%;
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
                     }
-                    h5 {
-                        font-size: 16px;
-                        font-weight: 400;
-                        color: #ffffff;
-                        margin: 16px 0;
-                        display: flex;
-                        flex-direction: column;
-                        span {
-                            color: ${palette.helperGrey};
-                        }
-                    }
-                    .link-wrapper {
-                        display: flex;
-                        margin: 12px 0;
-                        a {
-                            font-size: 16px;
-                            font-weight: 700;
-                            margin-right: 2em;
-                            color: ${palette.accentColor};
-                            transition: 0.2s;
-                            &:hover{
-                                color: #ffffff;
-                            }
-                        }
-                    }
-                    p {
-                        color: #ffffff;
-                        font-size: 14px;
-                        letter-spacing: 0.5px;
-                        line-height: 1.7;
-                        display: flex;
-                        flex-direction: column;
-                        span {
-                            font-weight: 400;
-                            color: ${palette.helperGrey};
-                        }
-                    }
-                }
-            }
-            .slider-container {
-                margin: auto;
-                width: 70%;
-                height: 50%;
-                img {
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 8px;
-                }
-                @media (max-width: 750px){
-                    width: 100%;
-                    height: 100%;
                 }
             }
         }
-        
+        .slider-container {
+            margin: auto;
+            width: 70%;
+            height: 50%;
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+            }
+            @media (max-width: 750px){
+                width: 90%;
+                height: 100%;
+            }
+        }
+        h5 {
+            font-size: 1em;
+            font-weight: 400;
+            color: ${palette.helperGrey};;
+            margin: 16px 0;
+            display: flex;
+            flex-direction: column;
+            span {
+                color: white;
+            }
+        }
+        p {
+            color: ${palette.helperGrey};
+            font-size: 1em;
+            letter-spacing: 0.5px;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            span {
+                color: white;
+            }
+        }
     }
+        
 `;

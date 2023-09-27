@@ -7,7 +7,7 @@ import Nav from "./components/Nav";
 
 // pages
 import HomePage from "./pages/HomePage";
-import ProjectPage from './pages/ProjectPage';
+import { ProjectPage } from './pages/ProjectPage';
 
 // router
 import { Routes, Route } from 'react-router-dom';

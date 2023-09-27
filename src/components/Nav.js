@@ -46,10 +46,11 @@ export default function Nav() {
     )
 }
 
-const StyledNav = styled.div`
+const StyledNav = styled.nav`
     display: flex;
     align-items: center;
-    height: 10vh;
+    max-height: 10vh;
+    margin: 10px 0;
     width: 100%;
     #logo {
         width: 40px;
@@ -112,7 +113,7 @@ const StyledNav = styled.div`
             background: transparent;
             border: none;
             cursor: pointer;
-            transition: 0.2s;
+            transition: 0.2s ease-in-out;
             &:hover, &:focus {
                 transform: scale(1.05);
             }
@@ -130,7 +131,7 @@ const StyledNav = styled.div`
                 font-size: 2em;
                 color: white;
                 margin: 20px;
-                transition: 0.2s;
+                transition: 0.2s ease-in-out;
                     &:hover, &:focus {
                     color: #f1f1f1;
                     transform: scale(1.05);
@@ -143,10 +144,10 @@ const StyledNav = styled.div`
         display: none;
         width: 30px;
         height: 30px;
-        transition: 0.2s;
+        transition: 0.2s ease-in-out;
         margin-left: auto;
         &:hover, &:focus {
-            transform: rotateZ(20deg);
+            transform: scale(1.05);
         }
         @media (max-width: 1050px){
             display: block;
