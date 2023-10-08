@@ -18,7 +18,7 @@ export default function SimpleSlider({images}) {
       {
         images.map((image, key) =>{
           return(
-            <StyledWrapper key={key}>
+            <StyledWrapper key={key} href={image} target="_blank" rel="noopener noreferrer">
               <img key={key} src={image} alt="" />
             </StyledWrapper>
           )
@@ -28,8 +28,8 @@ export default function SimpleSlider({images}) {
   );
 }
 
-const StyledWrapper = styled.div`
-height: 50vh;
+const StyledWrapper = styled.a`
+  height: 50vh;
   @media (max-width: 950px){
     height: 30vh;
   }
