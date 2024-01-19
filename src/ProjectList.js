@@ -7,25 +7,6 @@ import Swatter4 from './projectImages/Swatter4.png';
 import Swatter5 from './projectImages/Swatter5.png';
 import Swatter6 from './projectImages/Swatter6.png';
 
-// // Branded.
-// import B1 from './projectImages/b1.png';
-// import B2 from './projectImages/b2.png';
-// import B3 from './projectImages/b3.png';
-// import B4 from './projectImages/b4.png';
-// import B5 from './projectImages/b5.png';
-// import B6 from './projectImages/b6.png';
-
-// // Via.
-// import V1 from './projectImages/VN1.png';
-// import V2 from './projectImages/VN2.png';
-// import V3 from './projectImages/VN3.png';
-// import V4 from './projectImages/VN4.png';
-
-// Tech Blog
-import TB1 from './projectImages/tb1.png';
-import TB2 from './projectImages/tb2.png';
-import TB3 from './projectImages/tb3.png';
-import TB4 from './projectImages/tb4.png';
 
 export const ProjectList = [
     {
@@ -39,41 +20,5 @@ export const ProjectList = [
         githubLink: "https://github.com/billgibsondev/Swatter-Client",
         build: "JavaScript, React, MongoDB, Express, CSS and Node",
         npm: "Styled Components, Axios, React-Router-Dom, Bcrypt, Mongoose and React-Slick",
-    },
-        {
-        id: "5",
-        title:"Tech Blog",
-        linkTitle:"Tech-Blog",
-        thumbnail: TB1,
-        images: [TB1, TB2, TB3, TB4],
-        paragraph: "Tech Blog is a full stack application created to allow users to make articles for technology languages and more. I've recently rebuilt this app with Next.js to imporve social media sharing. This web app uses a custom login system for creators to make articles and post them to the website by sending them to a database. Each article and creator has a dedicated page that is generated dynamically. The creators page acts as a profile for the creator, displaying their social media and public information as well as articles written by them.",
-        websiteLink: "https://tech-blogg.netlify.app/",
-        githubLink:"https://github.com/billgibsondev/Next.js-Tech-Blog",
-        build:"CSS, JavaScript, React, Next.js, Redux, MongoDB, Express and Node",
-        npm: "Styled Components, Axios, Bcrypt, Marked and React-Router-Dom",
-    },
-    // {
-    //     id: "1",
-    //     title:"Via Napoli",
-    //     linkTitle:"Via-Napoli",
-    //     thumbnail: V1,
-    //     images: [V1, V2, V3, V4],
-    //     paragraph: "The Via Napoli website is built using CSS, React, Redux and a custom database I created for this project. This website allows users to “order” from a pizzeria, add items with specific quantities to the order using Redux and view them on a separate order page.  Each item has its own page dynamically generated for that specific item that gives more information about the item.",
-    //     websiteLink: "https://zealous-northcutt-991377.netlify.app/",
-    //     githubLink: "https://github.com/billgibsondev/React-Redux-Menu",
-    //     build: "JavaScript, CSS, React, Redux and a custom database",
-    //     npm: "Styled Components, Axios, React-Router-Dom, React-Redux, Redux-Thunk",
-    // },
-    // {
-    //     id: "3",
-    //     title:"Branded.",
-    //     linkTitle:"Branded-React-Redux-Shopping-Cart",
-    //     thumbnail: B1,
-    //     images: [B1, B2, B3, B4, B5, B6 ],
-    //     paragraph: "Branded is a React Website built with Free Store API, React, Redux, CSS and JavaScript. Shoppers can easily navigate the website, seamlessly add products to their shopping cart (Redux State) and view them on the separate cart page. All pages are linkable for sharing on social media, etc.",
-    //     websiteLink: "https://elastic-roentgen-a4f64d.netlify.app/",
-    //     githubLink: "https://github.com/billgibsondev/New-React-Marketplace",
-    //     build: "JavaScript, React, CSS, Free-Store-API and Redux",
-    //     npm: "Styled Components, Axios, React-Router-Dom, React-Redux, Redux-Thunk",
-    // }, 
+    }
 ]
