@@ -3,9 +3,6 @@ import { useState, useEffect } from 'react';
 // projects
 import { ProjectList } from '../ProjectList';
 
-// components
-import SimpleSlider from '../components/SimpleSlider.js';
-
 // styled
 import styled from 'styled-components';
 import * as palette from '../styled/ThemeVariables.js';
@@ -38,19 +35,16 @@ export const ProjectPage = () => {
                                 <h4>{project.title}</h4>
                                 <div className="link-wrapper">
                                     <a href={project.websiteLink} target="_blank" rel="noreferrer">
-                                        <img src={Link} alt="" />Demo
+                                        <img src={Link} alt="" />Website
                                     </a>
                                     <a href={project.githubLink} target="_blank" rel="noreferrer">
                                         <img src={Github} alt="" />Github
                                     </a>
                                 </div>
                             </div>
-                            <div className="slider-container">
-                                <SimpleSlider images={project.images} />
-                            </div>
+                            <p>{project.paragraph}</p>
                             <h5><span>Languages</span>{project.build}</h5>
                             <h5><span>NPM Packages</span>{project.npm}</h5>
-                            <p><span>Description </span>{project.paragraph}</p>
                         </div>
                     )
                 })
@@ -60,8 +54,8 @@ export const ProjectPage = () => {
 }
 
 const StyledProject = styled.section`
-    min-height: 80vh;
-    margin: 40px auto 0 auto;
+    min-height: 60vh;
+    margin: 20px auto 0 auto;
     width: 100%;
     .overlay-content {
         width: 100%;
@@ -73,13 +67,9 @@ const StyledProject = styled.section`
             align-items: center;
             margin-bottom: 10px;
             border-bottom: 2px solid ${palette.accentColor};
-            @media (max-width: 510px){
-                justify-content: center;
-                flex-direction: column;
-            }
             h4 {
-                font-size: 1.5em;
-                color: ${palette.accentColor};
+                font-size: 2.5em;
+                color: white;
             }
             .link-wrapper {
                 display: flex;
@@ -90,7 +80,7 @@ const StyledProject = styled.section`
                 }
                 a {
                     font-size: 1em;
-                    font-weight: 700;
+                    font-weight: 400;
                     color: white;
                     transition: 0.2s;
                     display: flex;
@@ -102,36 +92,26 @@ const StyledProject = styled.section`
                         background: #ffffff;
                     }
                     img {
-                        width: 24px;
-                        height: 24px;
+                        width: 1.5em;
+                        height: 1.5em;
                         margin-right: 6px;
                     }
                 }
             }
         }
-        .slider-container {
-            margin: auto;
-            width: 70%;
-            height: 50%;
-            img {
-                height: 100%;
-                width: 100%;
-                border-radius: 8px;
-            }
-            @media (max-width: 750px){
-                width: 90%;
-                height: 100%;
-            }
-        }
         h5 {
             font-size: 1em;
-            font-weight: 400;
-            color: ${palette.helperGrey};;
+            color: ${palette.helperGrey};
             margin: 16px 0;
             display: flex;
             flex-direction: column;
+            font-weight: 300;
             span {
                 color: white;
+                text-decoration: underline;
+                text-underline-position: under;
+                padding-bottom: 2px;
+                font-weight: 600;
             }
         }
         p {
@@ -141,9 +121,7 @@ const StyledProject = styled.section`
             line-height: 1.7;
             display: flex;
             flex-direction: column;
-            span {
-                color: white;
-            }
+            font-weight: 300;
         }
     }
         

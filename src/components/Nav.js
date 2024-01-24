@@ -73,7 +73,7 @@ const StyledNav = styled.nav`
                 color: ${palette.accentColor};
             }
         }
-        @media (max-width: 1050px){
+        @media (max-width: 850px){
             display: none;
         }
     }
@@ -90,7 +90,7 @@ const StyledNav = styled.nav`
             color: ${palette.accentColor};
             text-decoration: none;
         }
-        @media (max-width: 1050px){
+        @media (max-width: 850px){
             display: none;
         }
     }
@@ -149,7 +149,7 @@ const StyledNav = styled.nav`
         &:hover, &:focus {
             transform: scale(1.05);
         }
-        @media (max-width: 1050px){
+        @media (max-width: 850px){
             display: block;
         }
     }

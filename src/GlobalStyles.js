@@ -18,7 +18,7 @@ html {
     }
     @media (max-width: 1050px){
         width: 90%;
-        font-size: 70%;
+        font-size: 80%;
     }
 }
 
