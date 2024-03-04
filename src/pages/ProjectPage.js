@@ -55,7 +55,7 @@ export const ProjectPage = () => {
 
 const StyledProject = styled.section`
     min-height: 60vh;
-    margin: 20px auto 0 auto;
+    margin: 50px auto 0 auto;
     width: 100%;
     .overlay-content {
         width: 100%;
