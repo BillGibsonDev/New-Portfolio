@@ -24,7 +24,6 @@ export default function Project({
 const StyledProject = styled.div`
     height: 400px;
     max-height: 400px;
-    max-width: 400px;
     width: 50%;
     border-radius: 14px;
     position: relative;
