@@ -12,7 +12,7 @@ export default function Footer() {
         <StyledFooter>
             <div className="icon-container">
                 <a href="https://github.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Git} alt="Github Link" /></a>
-                <a href="https://twitter.com/BillGibsonDev" target="_blank" rel="noreferrer"><img src={Twitter} alt="Twitter Link" /></a>
+                <a href="https://twitter.com/bill_gib_dev" target="_blank" rel="noreferrer"><img src={Twitter} alt="Twitter Link" /></a>
                 <a href="https://www.linkedin.com/in/bill-gibson-868182104/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="Linkedin Link" /></a>
             </div>
         </StyledFooter>
